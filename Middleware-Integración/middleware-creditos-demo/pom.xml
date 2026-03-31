@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  MIDDLEWARE CREDITOS DEMO - Apache Camel + Spring Boot          ║
+    ║                                                                  ║
+    ║  Proyecto demostrativo de un middleware de integracion para       ║
+    ║  una entidad de microfinanzas usando:                            ║
+    ║  - Apache Camel 4.x como framework de integracion                ║
+    ║  - Spring Boot 3.x como plataforma base                         ║
+    ║  - ActiveMQ Artemis embebido para mensajeria JMS                 ║
+    ║  - Simulacion de integracion con Bantotal (core bancario)        ║
+    ║                                                                  ║
+    ║  Cada archivo tiene comentarios detallados en español            ║
+    ║  explicando patrones EIP, componentes Camel y conceptos          ║
+    ║  del sector financiero.                                          ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+
+    <!-- ============================================================
+         PARENT: Spring Boot Starter Parent
+         Hereda la gestion de versiones de todas las dependencias
+         de Spring Boot. Asi no necesitas especificar versiones
+         de librerias comunes (Jackson, Artemis, JUnit, etc.)
+         ============================================================ -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.middleware</groupId>
+    <artifactId>middleware-creditos-demo</artifactId>
+    <version>1.0.0</version>
+    <name>Middleware Creditos Demo</name>
+    <description>Demo de middleware de integracion con Apache Camel para microfinanzas</description>
+
+    <properties>
+        <!-- Java 17 es el minimo para Spring Boot 3.x -->
+        <java.version>17</java.version>
+
+        <!-- Version de Apache Camel: debe ser compatible con Spring Boot 3.x
+             Camel 4.x usa jakarta.* (no javax.*) -->
+        <camel.version>4.3.0</camel.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- ============================================================
+                 BOM (Bill of Materials) de Apache Camel
+                 Centraliza las versiones de TODOS los componentes Camel.
+                 Asi cuando agregas camel-jms, camel-http, etc. no necesitas
+                 especificar la version de cada uno.
+                 ============================================================ -->
+            <dependency>
+                <groupId>org.apache.camel.springboot</groupId>
+                <artifactId>camel-spring-boot-bom</artifactId>
+                <version>${camel.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <!-- ============================================================
+             SPRING BOOT STARTERS
+             ============================================================ -->
+
+        <!-- Starter Web: necesario para que Camel REST funcione con Servlet.
+             Incluye Tomcat embebido como servidor HTTP -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Starter Artemis: ActiveMQ Artemis embebido para JMS.
+             Permite que el proyecto corra sin un broker externo.
+             En produccion usarias Red Hat AMQ (que es Artemis con soporte Red Hat) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-artemis</artifactId>
+        </dependency>
+
+        <!-- Artemis Server embebido: permite levantar un broker
+             dentro de la misma JVM para desarrollo/demos.
+             En produccion NO se usa: el broker corre aparte -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>artemis-server</artifactId>
+        </dependency>
+
+        <!-- ============================================================
+             APACHE CAMEL - COMPONENTES
+             Cada componente conecta Camel con una tecnologia diferente.
+             Son como "plugins" que implementan un protocolo o formato.
+             ============================================================ -->
+
+        <!-- Camel Core + Spring Boot auto-configuracion.
+             Este starter registra automaticamente todas las clases
+             que extienden RouteBuilder como rutas de Camel -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- camel-jackson: Transformacion JSON <-> Objetos Java.
+             Se usa con .marshal().json() y .unmarshal().json()
+             Esencial para integracion REST con Bantotal -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-jackson-starter</artifactId>
+        </dependency>
+
+        <!-- camel-http: Componente HTTP cliente.
+             Para hacer llamadas REST a servicios externos (BTServices).
+             URI: "http://host:port/path"
+             NOTA: En Camel 4.x se llama camel-http (en Camel 2.x era camel-http4) -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-http-starter</artifactId>
+        </dependency>
+
+        <!-- camel-jms: Componente JMS para mensajeria.
+             Conecta con ActiveMQ Artemis / Red Hat AMQ.
+             URI: "jms:queue:nombre" o "jms:topic:nombre"
+             Soporta transacciones, DLQ, request-reply -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-jms-starter</artifactId>
+        </dependency>
+
+        <!-- camel-servlet: Transporte Servlet para REST DSL.
+             Permite exponer APIs REST dentro del servidor web de Spring Boot.
+             Alternativas: camel-netty-http, camel-undertow -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-servlet-starter</artifactId>
+        </dependency>
+
+        <!-- camel-csv: Procesamiento de archivos CSV.
+             Se usa con .unmarshal().csv() para leer archivos
+             de desembolsos masivos (proceso batch) -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-csv-starter</artifactId>
+        </dependency>
+
+        <!-- camel-bean: Invocacion de beans Spring desde rutas.
+             Permite usar .bean(miServicio, "metodo") en las rutas.
+             Incluido en el core pero el starter agrega auto-configuracion -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-bean-starter</artifactId>
+        </dependency>
+
+        <!-- camel-direct: Endpoints sincronos en memoria.
+             URI: "direct:nombre" - invocacion sincrona (mismo hilo).
+             Se usa para conectar rutas internas secuencialmente -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-direct-starter</artifactId>
+        </dependency>
+
+        <!-- camel-seda: Endpoints asincronos en memoria.
+             URI: "seda:nombre" - cola en memoria con hilos separados.
+             Se usa para tareas que no necesitan respuesta inmediata
+             (notificaciones, auditoria) -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-seda-starter</artifactId>
+        </dependency>
+
+        <!--
+        ============================================================
+        COMPONENTE QUE NO INCLUIMOS PERO ES IMPORTANTE CONOCER:
+
+        camel-cxf: Para servicios SOAP (consumir y exponer).
+        Se usa para integrar con BTServices SOAP de Bantotal.
+        Genera clases Java desde WSDL con el plugin cxf-codegen.
+        No lo incluimos en este demo porque requiere un WSDL real
+        y agrega complejidad. Ver archivo 08-SOAP-WEB-SERVICES.md
+
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-cxf-soap-starter</artifactId>
+        </dependency>
+        ============================================================
+        -->
+
+        <!-- ============================================================
+             TESTING
+             ============================================================ -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Camel Test con Spring Boot: proporciona MockEndpoint,
+             AdviceWith, ProducerTemplate para testing de rutas -->
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin de Spring Boot para empaquetar y ejecutar.
+                 Permite: mvn spring-boot:run -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!--
+            ============================================================
+            PLUGIN PARA GENERAR CLASES DESDE WSDL (no incluido en demo)
+
+            En produccion se usaria este plugin para generar las clases
+            Java de los servicios SOAP de Bantotal:
+
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-codegen-plugin</artifactId>
+                <version>4.0.3</version>
+                <executions>
+                    <execution>
+                        <goals><goal>wsdl2java</goal></goals>
+                        <configuration>
+                            <wsdlOptions>
+                                <wsdlOption>
+                                    <wsdl>src/main/resources/wsdl/BTClientes.wsdl</wsdl>
+                                </wsdlOption>
+                            </wsdlOptions>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            ============================================================
+            -->
+        </plugins>
+    </build>
+</project>

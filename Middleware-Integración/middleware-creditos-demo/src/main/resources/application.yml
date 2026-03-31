@@ -1,0 +1,113 @@
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║  CONFIGURACION DEL MIDDLEWARE DE CREDITOS                       ║
+# ║                                                                  ║
+# ║  Este archivo centraliza TODA la configuracion del middleware.   ║
+# ║  En produccion, los valores sensibles (passwords, tokens)        ║
+# ║  vendrian de OpenShift Secrets o HashiCorp Vault, NO aqui.       ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
+# ---- Servidor HTTP (Tomcat embebido) ----
+server:
+  port: 8080
+
+# ---- Spring Boot ----
+spring:
+  application:
+    name: middleware-creditos
+
+  # ---- ActiveMQ Artemis Embebido ----
+  # En este demo usamos un broker embebido (en la misma JVM).
+  # En produccion, se usaria Red Hat AMQ externo.
+  # Modo EMBEDDED = broker dentro de la app (solo para desarrollo)
+  # Modo NATIVE = broker externo (produccion con Red Hat AMQ)
+  artemis:
+    mode: embedded
+    embedded:
+      enabled: true
+      # Colas JMS que se crean automaticamente al arrancar.
+      # En produccion se configuran en broker.xml de AMQ
+      queues:
+        - solicitudes-credito
+        - pagos-entrantes
+        - notificaciones
+        - auditoria-operaciones
+        - DLQ.creditos
+        - DLQ.general
+
+# ---- Apache Camel ----
+camel:
+  springboot:
+    # Nombre del CamelContext (aparece en logs y monitoreo)
+    name: middleware-creditos-context
+
+    # Mantener la app corriendo (sin esto, Spring Boot termina
+    # si no detecta un servidor web activo)
+    main-run-controller: true
+
+  # Configuracion del componente JMS
+  component:
+    jms:
+      # SESSION_TRANSACTED: el ack del mensaje se hace con commit/rollback.
+      # CRITICO en operaciones financieras: si el procesamiento falla,
+      # el rollback devuelve el mensaje a la cola (no se pierde).
+      # Opciones: AUTO_ACKNOWLEDGE, CLIENT_ACKNOWLEDGE, SESSION_TRANSACTED
+      acknowledgement-mode-name: SESSION_TRANSACTED
+
+  servlet:
+    mapping:
+      # Path base donde Camel Servlet registra sus endpoints REST.
+      # Las rutas REST se exponen en: http://localhost:8080/camel/api/...
+      context-path: /camel/*
+
+  rest:
+    # Usa Servlet como transporte HTTP para el REST DSL de Camel.
+    # Alternativas: netty-http, undertow, platform-http
+    component: servlet
+
+    # Serializa/deserializa automaticamente JSON en REST endpoints.
+    # OFF = manual con marshal/unmarshal
+    # JSON = automatico con Jackson
+    binding-mode: json
+
+    # Habilitar CORS para que la app movil pueda llamar al middleware
+    enable-cors: true
+
+    # Documentacion OpenAPI (Swagger) del REST DSL
+    api-context-path: /api-doc
+
+# ---- Configuracion de Bantotal (BTServices) ----
+# Estos valores se usan en las rutas Camel con {{bantotal.base-url}}
+# En produccion vendrian de ConfigMaps de OpenShift
+bantotal:
+  # URL del core bancario. En produccion seria algo como:
+  # http://bantotal-core.banco.internal:8080
+  base-url: http://localhost:8080/camel/bantotal-simulator
+
+  # Canal identificador del middleware en Bantotal
+  canal: MIDDLEWARE
+
+  # Usuario de servicio para BTServices
+  usuario: USR_MIDDLEWARE
+
+  # Dispositivo/origen de la peticion
+  device: CAMEL_SERVER
+
+  # Timeout en milisegundos para llamadas a Bantotal
+  # 30 segundos es razonable para operaciones normales
+  timeout: 30000
+
+# ---- Configuracion de procesos batch ----
+batch:
+  # Directorio donde se depositan los archivos CSV de desembolsos masivos.
+  # En produccion seria un volumen persistente montado en OpenShift
+  desembolsos-dir: ./data/desembolsos
+
+# ---- Logging ----
+logging:
+  level:
+    # Nivel DEBUG para las rutas Camel (ver flujo de mensajes)
+    org.apache.camel: INFO
+    # Nivel DEBUG para nuestro codigo del middleware
+    com.middleware.creditos: DEBUG
+    # Silenciar logs de Artemis embebido (muy verboso)
+    org.apache.activemq.artemis: WARN

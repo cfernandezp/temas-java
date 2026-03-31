@@ -1,0 +1,10 @@
+# Archivo CSV de ejemplo para proceso batch de desembolsos masivos.
+# Cada linea representa un desembolso individual que el middleware
+# procesa llamando a BTPrestamos.Crear y BTOperaciones.CrearCredito.
+# Este archivo se deposita en un directorio monitoreado por Camel (file component).
+idLote,clienteId,dniCliente,monto,cuentaDestino,tipoProducto,plazoMeses
+LOTE-2026-001,CLI-1001,12345678,15000.00,CTA-2001,MICROEMPRESA,12
+LOTE-2026-001,CLI-1002,87654321,8500.50,CTA-2002,PERSONAL,6
+LOTE-2026-001,CLI-1003,11223344,32000.00,CTA-2003,MICROEMPRESA,24
+LOTE-2026-001,CLI-1004,55667788,5000.00,CTA-2004,PERSONAL,12
+LOTE-2026-001,CLI-1005,99887766,120000.00,CTA-2005,HIPOTECARIO,48
