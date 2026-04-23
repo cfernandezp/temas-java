@@ -10,7 +10,7 @@
 ### Quién es quién
 - **Simera** → plataforma AI-driven de contratación de talento remoto en LATAM. Conecta profesionales pre-evaluados con empresas de USA/Canadá. Manejan onboarding, compliance internacional, payroll. Ofrecen hasta 70% de ahorro en costos de contratación.
 - **Interfell** (con doble L) → empresa de **staffing, recruiting y payroll en LATAM**, enfocada en conectar talento IT latinoamericano con startups y empresas tech. Usan IA para enriquecer perfiles de candidatos ("Interfell Professional Key"). Servicios: Staffing, Recruiting, Talent Management, RaaS.
-- **Cliente final** → empresa que necesita el Java Developer para reactivar la plataforma Kafka. **Aún no me lo han revelado** (es estándar en staffing hasta etapas avanzadas).
+- **Cliente final** → **Yachay** (confirmado). Empresa a la que sería asignado para reactivar la plataforma Kafka. La entrevista del martes es directamente con Yachay.
 
 ### Puesto
 - **Rol:** Java Developer (Kafka Platform Specialist)
