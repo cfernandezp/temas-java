@@ -1,0 +1,15 @@
+Formación Académica
+
+Título profesional en Ingeniería de Sistemas, Informática, Computación o afines.
+
+Experiencia General
+Mínimo cinco (5) años de experiencia en desarrollo de software.
+Mínimo tres (3) años en el sector financiero (experiencia deseable en microfinanzas o cajas municipales).
+Competencias Técnicas Obligatorias - Middleware Red Hat
+Experiencia comprobada en Red Hat Fuse / Apache Camel: rutas de integración, transformación de datos, orquestación de servicios. → Principalmente Apache Camel.
+Conocimiento y experiencia en integraciones con Bantotal y BTServices (REST/SOAP).
+Experiencia con OpenShift / Kubernetes.
+Certificación Red Hat (RHCJD, Camel Developer, o similar). (Deseable)
+Conocimiento de Red Hat JBoss EAP como servidor de aplicaciones. (Deseable)
+Experiencia en mensajería asíncrona con Red Hat AMQ y/o Apache Kafka: configuración de productores, consumidores, colas, topics, DLQ. → Principalmente Apache Kafka
+Conocimiento de patrones de integración empresarial (EIP): Content-Based Router, Message Translator, Splitter/Aggregator, Wire Tap.

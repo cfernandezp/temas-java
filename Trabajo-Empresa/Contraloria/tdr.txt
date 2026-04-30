@@ -1,0 +1,896 @@
+                                           CONTRALORÍA GENERAL DE LA REPÚBLICA
+
+                                     PROYECTO "MEJORAMIENTO DE LOS SERVICIOS DE CONTROL
+                                   GUBERNAMENTAL PARA UN CONTROL EFECTIVO, PREVENTIVO Y
+
+                                                    FACILITADOR DE LA GESTIÓN PÚBLICA" ­ BID3
+
+                                         NOMBRE                                  NOMBRE                CÓDIGO
+                                     COMPONENTE    ADECUADOS PROCESOS PARA UN CONTROL                      1
+
+                                       PRODUCTO                    EFECTIVO Y EFICIENTE                   1.8
+                                                   SISTEMA INTEGRADO DE LOS SERVICIOS DE                 1.8.2
+                                   NOMBRE ACCIÓN
+                                     DE INVERSIÓN        CONTROL DE LA CGR Y OCIS (SICG)
+
+                                                   SISTEMA INTEGRADO DE LOS SERVICIOS DE
+                                                        CONTROL GUBERNAMENTAL - FASE 2
+
+                                                   Términos de Referencia
+
+                                   CONTRATACIÓN DE UN CONSULTOR INGENIERO DE DATOS I PARA EL DESARROLLO
+                                      DEL "MÓDULO DE ANÁLISIS DE DATOS PARA DAR SOPORTE A LOS AUDITORES
+                                         DURANTE LA EJECUCIÓN DE LOS SERVICIOS DE CONTROL" EN EL SISTEMA
+                                                       INTEGRADO DE CONTROL DEL PROYECTO INTERNO 1.8.2
+
+Firmado digitalmente por                           1. Introducción
+CORDOVA VELIZ Cesar                                2. Antecedentes
+Rolando FAU 20131378972                            3. Objetivo
+soft                                               4. Alcance de la Consultoría
+Motivo: Doy Visto Bueno                            5. Metodología de trabajo
+Fecha: 11-02-2026 14:12:41 -05:00                  6. Actividades a Realizar
+                                                   7. Productos
+Firmado digitalmente por                           8. Plazo de ejecución de la consultoría
+ENCISO ROCA Jhon Michell                           9. Perfil del consultor
+FAU 20131378972 soft                               10. Monto, forma y condiciones de pago
+Motivo: Doy Visto Bueno                            11. Lugar de prestación del servicio
+Fecha: 10-02-2026 18:06:58 -05:00                  12. Coordinación, supervisión y conformidad
+                                                   13. Accesos
+                                                   14. Derechos de propiedad y confidencialidad de la
+
+                                                        información
+                                                   15. Anticorrupción
+                                                   16. Penalidades
+                                                   17. Anexo
+
+                                                         FEBRERO 2026
+
+Firmado digitalmente por
+HUISA MANZANARES Rocio Del
+Pilar FAU 20131378972 soft
+Motivo: Doy Visto Bueno
+Fecha: 10-02-2026 17:48:48 -05:00
+CONTRATACIÓN DE UN CONSULTOR INGENIERO DE DATOS I PARA EL DESARROLLO
+    DEL "MÓDULO DE ANÁLISIS DE DATOS PARA DAR SOPORTE A LOS AUDITORES
+       DURANTE LA EJECUCIÓN DE LOS SERVICIOS DE CONTROL" EN EL SISTEMA
+                     INTEGRADO DE CONTROL DEL PROYECTO INTERNO 1.8.2
+
+1. INTRODUCCIÓN
+
+      La Contraloría General de la República (CGR), es el ente rector del Sistema Nacional de
+      Control (SNC), dotado de autonomía administrativa, funcional, económica y financiera, que
+      tiene por misión dirigir y supervisar con eficiencia y eficacia el control gubernamental
+      orientando su accionar al fortalecimiento y transparencia de la gestión de las entidades, la
+      promoción de valores y la responsabilidad de los funcionarios y servidores públicos, así
+      como contribuir con los Poderes del Estado en la toma de decisiones y con la ciudadanía
+      para su adecuada participación en el control social.
+
+      En el marco de sus competencias institucionales y con el propósito de fortalecer las
+      capacidades del Sistema Nacional de Control, la CGR ha priorizado la modernización y
+      mejora de sus servicios mediante la implementación de iniciativas estratégicas orientadas a
+      optimizar el control gubernamental. En este contexto, se viene ejecutando el Proyecto de
+      Inversión Pública con Código Único de Inversiones (CUI) N° 2412703, denominado
+      "Mejoramiento de los servicios de control gubernamental para un control efectivo, preventivo
+      y facilitador de la gestión pública" (en adelante, Proyecto BID 3), cuyo objetivo principal es
+      contribuir a la mejora de los servicios de control gubernamental, con el fin de mejorar la
+      eficiencia y efectividad en el uso de los recursos del Estado.
+
+2. ANTECEDENTES
+      El Proyecto de Inversión (CUI) N°2412703 "Mejoramiento de los Servicios de Control
+      Gubernamental para un control Efectivo, Preventivo y Facilitador de la Gestión Pública-
+      BID3" fue declarado viable por la Unidad Formuladora de la Contraloría General de la
+      República (Gerencia Técnico Normativo) ahora Subgerencia de Formulación de Proyectos
+      con fecha 28 de agosto de 2018 e inscrito en el Banco de Inversiones del MEF; el referido
+      proyecto tiene como objetivo central brindar adecuados servicios de control gubernamental
+      en el Estado".
+
+      Con fecha 5 de febrero de 2019 se firmó el Contrato Préstamo N° 4724/OC-PE entre la
+      República del Perú y el Banco Interamericano de Desarrollo (BID) para financiar el Proyecto
+      "Mejoramiento de los servicios de control gubernamental para un control efectivo, preventivo
+      y facilitador de la gestión pública", el mismo que está diseñado para contribuir a la mejora
+      de los servicios de control gubernamental, con el fin de mejorar la eficiencia y efectividad en
+      el uso de los recursos del Estado.
+      El Proyecto contempla la ejecución de los siguientes componentes:
+
+       Componente 1. Adecuados procesos para un control efectivo y eficiente.
+       Componente 2. Adecuadas capacidades de los RRHH en temas de control
+
+          gubernamental.
+       Componente 3. Adecuado acceso a TIC en los procesos de control gubernamental.
+       Componente 4. Adecuada capacidad operativa para la prestación de servicios de control
+
+          desconcentrados.
+       Componente. Monitoreo, Evaluación y Auditoria
+       Componente. Administración.
+
+      En el marco del Contrato de Préstamo N° 4724/OC-PE se ha elaborado el Manual Operativo
+      del Proyecto (MOP) "Mejoramiento de los servicios de control gubernamental para un control
+      efectivo, preventivo y facilitador de la gestión pública", en donde se establece el esquema
+      de gestión, pautas, normas, guías y estándares para la organización, implementación y
+      gestión del Proyecto.
+
+      En el MOP, se indica que el Organismo Ejecutor (OE) del Proyecto es la Contraloría General
+      de la República (CGR), a través de la Unidad Ejecutora 002 "Gestión de Proyectos y
+      Fortalecimiento de Capacidades" (UE002).
+
+                                                                                                                                     2
+      La UE 002 tiene a su cargo la ejecución, la gestión financiera y de adquisiciones, la dirección
+      y la coordinación general del Proyecto, y actuará como interlocutor directo ante el BID, el
+      Ministerio de Economía y Finanzas y otras instancias vinculadas a la gestión del mismo.
+
+      En tal sentido, el Componente 1, tiene como objetivo mejorar la gestión de los servicios de
+      control gubernamental para la prevención de la inconducta funcional y la corrupción y para
+      una gestión orientada a resultados, en base a lo anterior y como parte del proceso de
+      modernización de la CGR, se prevé la implementación de la Acción de Inversión 1.8.2
+      "Implementación del Sistema Integrado de los Servicios de Control Gubernamental - Fase
+      2".
+
+      Al respecto, la Unidad Orgánica responsable (UOR) de la Acción de Inversión 1.8.2
+      "Procesos Adecuados al Nuevo Modelo de Control Gubernamental Desconcentrado - Etapa
+      5" es la Subgerencia de Sistemas de Información y Analítica de Datos y dada la importancia
+      del adecuado desarrollo de las actividades relacionadas a la Acción de Inversión
+      mencionada líneas arriba.
+
+3. OBJETIVO
+
+    Objetivo General
+
+    Brindar soporte especializado como ingeniero de datos durante el desarrollo del componente
+    "Módulo de análisis de datos para dar soporte a los auditores durante la ejecución de los
+    servicios de control", del proyecto interno 1.8.2, con la finalidad de disponer datos procesados
+    y filtrados (Extracción, Transformación, limpieza y carga) de fuentes externas e internas, para
+    la identificación de casos atípicos en el que se transgrede una normativa vigente. Esta
+    información será de utilidad para la labor del auditor.
+
+    Objetivos Específicos
+
+          Identificación de las fuentes externas e internas que serán necesarias para el
+               procesamiento de los datos.
+
+          Limpieza y transformación de los datos en la capa plata y oro de la plataforma de
+               minería de datos de la CGR.
+
+          Elaboración del (de los) DAG(s) de los procesos ETL.
+          Disponer los datos procesados y validados para ser consumidos por los tableros de
+
+               control y/o sistema integrado de control gubernamental.
+
+4. ALCANCE DE LA CONSULTORÍA
+
+    El consultor deberá realizar las actividades de carga de datos al lakehouse (lago de datos) de
+    la CGR, limpieza, transformación y validación de los datos, diccionario y diagrama del modelo
+    de datos, despliegue en los ambientes de desarrollo, calidad y producción; así como la
+    validación correspondiente a los productos que forman parte de los entregables de EL
+    PROYECTO.
+
+5. METODOLOGÍA DE TRABAJO
+
+    La consultoría se desarrollará conforme a los lineamientos establecidos por la Gerencia de
+    Tecnologías de la Información y Gobierno Digital y bajo supervisión de la Subgerencia de
+    Sistemas de Información y Analítica de Datos en coordinación con la Subgerencia de Gestión
+    de Inversiones.
+
+    El trabajo se ajustará a la metodología institucional de la CGR para la implementación del
+    proyecto, aplicando el Procedimiento "Desarrollo de Soluciones", Estándares de base de
+    datos y otros lineamientos técnicos vigentes.
+
+                                                                                                                                     3
+La SINFA establecerá los canales de coordinación y comunicación, y validará los entregables
+del consultor conforme a los estándares de calidad definidos para el proyecto.
+
+6. ACTIVIDADES A REALIZAR
+
+    Las actividades comprenden, sin limitarse a:
+
+    a. Identificación de las fuentes externas e internas que serán necesarias para el
+         procesamiento de los datos.
+
+    b. Carga de fuentes externas e internas al Lakehouse de la CGR, implementado bajo el
+         ecosistema de Apache Hadoop.
+
+    c. Limpieza y transformación de los datos en la capa plata y oro de la plataforma de minería
+         de datos de la CGR.
+
+    d. Elaboración de scripts para la identificación de casos atípicos en fuentes externas y/o
+         internas.
+
+    e. Participar en la elaboración del mapeo de campos de las historias de usuario referidas a
+         procesamiento ETL.
+
+    f. Carga de los datos en la capa de servicio de la plataforma de minería de datos de la CGR.
+    g. Elaboración del (de los) DAG(s) de los procesos ETL bajo los estándares de la GTIGD de
+
+         la CGR.
+    h. Disponer los datos procesados y validados para ser consumidos por los tableros de
+
+         control y/o sistema integrado de control gubernamental.
+    i. Actualización del proceso ETL, producto de la retroalimentación con el líder usuario y/o
+
+         analista de sistemas.
+    j. Documentación de los procesos ETL elaborados.
+    k. Diccionario y diagrama del modelo de datos.
+    l. Diagrama de linaje de los datos.
+    m. Elaboración de la matriz bus de los modelos dimensionales implementados.
+    n. Elaboración de documentación técnica necesaria para el despliegue de la solución en los
+
+         ambientes de certificación y producción.
+    o. Atención de incidencias durante la puesta en producción de la solución implementada.
+    p. Capacitación técnica de los procesos ETL elaborados.
+    q. El código fuente o equivalente se da por entregado una vez este almacenado en el
+
+         repositorio Gitlab de la CGR.
+
+7. PRODUCTOS
+
+    El consultor debe proporcionar productos que garanticen la transparencia, la responsabilidad
+    y la mejora continua. En ese sentido, el consultor deberá generar y entregar los siguientes
+    productos a través de mesa de partes virtual de la CGR
+    (https://mesadepartesvirtual.contraloria.gob.pe/mpvirtual/), dirigido a la Subgerencia de
+    Sistemas de Información y Analítica de Datos, con copia a la Subgerencia de Gestión de
+    Inversiones o la que haga sus veces, en las fechas que corresponda.
+
+Productos   Contenido
+            Plan de Trabajo, detallando productos específicos derivados del servicio
+    Primer  solicitado y las actividades requeridas para alcanzarlos. Para ello, el
+  Producto  consultor deberá presentar el Plan de Trabajo de las actividades definidas
+            en el presente documento; así como:
+
+              · Objetivo de la consultoría.
+              · Actividades.
+              · Plazos.
+              · Cronograma de actividades (Gantt).
+              · Conclusiones y Recomendaciones.
+              · Descripción de la metodología de referencia a emplear.
+              · Programación, los plazos y productos, sujeto a los términos de
+
+                referencia.
+
+                                                                                                                   4
+Segundo   Documento técnico que sustente la presentación de entregables
+Producto  correspondientes al caso atípico: "Ausencia del ingeniero residente y/o
+          supervisor de la ejecución de la obra", entre ellos:
+  Tercer
+Producto    · Listado de fuentes externas e internas que serán necesarias para el
+              procesamiento de los datos.
+  Cuarto
+Producto    · Scripts para la identificación de casos atípicos en fuentes de datos
+              externas e internas: SSI, INFOBRAS, entre otras fuentes.
+
+            · Documento de mapeo de campos de fuentes externas e internas: SSI,
+              INFOBRAS, entre otras fuentes referidas a procesamiento ETL.
+
+          Documento técnico que sustente la presentación de entregables
+          correspondientes al caso atípico: "Ausencia del ingeniero residente y/o
+          supervisor de la ejecución de la obra", entre ellos:
+
+            · Listado de fuentes externas e internas adicionales que serán necesarias
+              para el procesamiento de los datos.
+
+            · Scripts para la identificación de casos atípicos en fuentes de datos
+              externas como consulta de Inversiones del MEF, SIAF, MEF_ANDAT,
+              entre otras fuentes.
+
+            · Documento de mapeo de campos de fuentes de datos externas como
+              consulta de Inversiones del MEF, SIAF, MEF_ANDAT, entre otras
+              fuentes referidas a procesamiento ETL.
+
+            · Aplicaciones Python elaborados para el procesamiento de los datos
+              (SSI, INFOBRAS, MEF, SIAF, MEF_ANDAT, entre otras fuentes.,
+              basados en pyspark y Spark SQL, bajo los estándares de la GTIGD de
+              la CGR.
+
+            · Diagrama de carga de los datos en las diferentes capas de la plataforma
+              de minería de datos de la CGR (Linaje de los datos).
+
+          Documento técnico que sustente la presentación de entregables
+          correspondientes al caso atípico: "Sancionados SERVIR que están
+          laborando o laboraron durante el periodo de sanción", entre ellos:
+
+            · Scripts para la identificación de casos atípicos en fuentes de datos
+              externas como, SERVIR, SUNEDU, RNP, PLANILLAS AIRHSP entre
+              otras fuentes.
+
+            · Documento mapeo de campos de fuentes de datos externas como,
+              SERVIR, SUNEDU, RNP, PLANILLAS AIRHSP entre otras fuentes
+              referidas a procesamiento ETL.
+
+  Quinto  Documento técnico que sustente la presentación de entregables
+Producto  correspondientes al caso atípico: "Sancionados SERVIR que están
+          laborando o laboraron durante el periodo de sanción", entre ellos:
+
+            · Diagrama de carga de los datos (SERVIR, SUNEDU, RNP, PLANILLAS
+              AIRHSP entre otras fuentes) en las diferentes capas de la plataforma
+              de minería de datos de la CGR (Linaje de los datos).
+
+            · Aplicaciones Python elaborados para el procesamiento de limpieza,
+              transformación y carga de datos (SERVIR, SUNEDU, RNP, PLANILLAS
+              AIRHSP entre otras fuentes), basados en pyspark y Spark SQL.
+
+            · Diagrama Lógico de Datos del Modelo Dimensional.
+            · Documentación técnica para el pase certificación de los casos atípicos
+
+              implementados (Scripts, ETLS).
+
+          5
+  Sexto   Documento técnico que sustente la presentación de entregables
+Producto  correspondientes al caso atípico: "Beneficiarios de Programas Sociales
+          que no corresponden", entre ellos:
+
+            · Scripts para la identificación de casos atípicos en fuentes de datos
+              externas como: SISFOH, JUNTOS, PENSION 65 entre otras fuentes.
+
+            · Documento mapeo de campos de fuentes de datos externas como,
+              SISFOH, JUNTOS, PENSION 65 entre otras fuentes referidas a
+              procesamiento ETL.
+
+            · Aplicaciones Python actualizados para el procesamiento de limpieza,
+              transformación y carga de datos, basados en pyspark y Spark SQL.
+
+Séptimo   Documento técnico que sustente la presentación de entregables
+Producto  correspondientes al caso atípico: "Beneficiarios de Programas Sociales
+          que no corresponden", entre ellos:
+
+            · Scripts para la identificación de casos atípicos en fuentes de datos
+              externas como: MEF, PLANILLAS, RENIEC, entre otras fuentes.
+
+            · Documento mapeo de campos de fuentes de datos externas como, MEF,
+
+              PLANILLAS, RENIEC entre otras fuentes referidas a procesamiento ETL.
+            · Aplicaciones Python actualizados para el procesamiento de limpieza,
+
+              transformación y carga de datos, basados en pyspark y Spark SQL.
+            · Diagrama de carga de los datos (SERVIR, SUNEDU, RNP, PLANILLAS
+
+              AIRHSP entre otras fuentes) en las diferentes capas de la plataforma
+              de minería de datos de la CGR (Linaje de los datos).
+
+ Octavo   Documento técnico que sustente la presentación de:
+Producto
+            · Documentación técnica actualizada necesaria para el despliegue de la
+              solución en los ambientes de certificación y producción.
+
+            · Matriz bus del modelo dimensional implementado (según dimensiones
+              cargadas por el consultor).
+
+            · Aplicaciones Python actualizadas
+            · Documento técnico que sustente la presentación de validación de datos
+
+              procesados para los casos atípicos:
+                  - Sancionados SERVIR que están laborando o laboraron durante
+                       el periodo de sanción.
+                  - Ausencia del ingeniero residente y/o supervisor en la ejecución
+                       de la obra.
+
+ Noveno   Documento técnico que sustente la presentación de:
+Producto
+            · Informe de validación de datos procesados para los casos atípicos:
+                 · Beneficiarios de programas sociales que no corresponden.
+
+            · Levantamiento de observaciones producto del proceso de certificación
+            · Informe de transferencia de conocimiento a personal técnico en
+
+              referencia a los productos implementados (incluye material para la
+              capacitación técnica).
+            · Documentos técnicos actualizados de corresponder.
+
+8. PLAZO DE EJECUCIÓN DE LA CONSULTORÍA
+
+    El plazo para la ejecución del servicio será hasta los doscientos cuarenta (240) días
+    calendario, contados a partir del día siguiente de la suscripción del contrato.
+
+          6
+        Productos                                        Plazos
+Primer Producto
+Segundo Producto   Será presentado hasta los siete (7) días calendario a partir del
+Tercer Producto    día siguiente de la suscripción del contrato.
+Cuarto Producto    Será presentado hasta los treinta (30) días calendario a partir del
+Quinto Producto    día siguiente de la suscripción del contrato.
+Sexto Producto     Será presentado hasta los sesenta (60) días calendario a partir
+Séptimo Producto   del día siguiente de la suscripción del contrato.
+Octavo Producto    Será presentado hasta los noventa (90) días calendario a partir
+Noveno Producto    del día siguiente de la suscripción del contrato.
+                   Será presentado hasta los ciento veinte (120) días calendario a
+                   partir del día siguiente de la suscripción del contrato.
+                   Será presentado hasta los ciento cincuenta (150) días calendario
+                   a partir del día siguiente de la suscripción del contrato.
+                   Será presentado hasta los ciento ochenta (180) días calendario a
+                   partir del día siguiente de la suscripción del contrato.
+                   Será presentado hasta los doscientos diez (210) días calendario
+                   a partir del día siguiente de la suscripción del contrato.
+                   Será presentado hasta los doscientos cuarenta (240) días
+                   calendario a partir del día siguiente de la suscripción del contrato.
+
+En caso de que el día de entrega del producto corresponda a un día no laborable, El consultor
+presentará el informe correspondiente al día hábil siguiente.
+
+Notificación de Observaciones:
+
+ La Unidad Orgánica Responsable (UOR) otorgará la conformidad, en un plazo que no
+     exceda de los 05 días calendario, computados desde el día siguiente de la recepción de
+     los productos/entregables o de la subsanación de las observaciones formuladas por el
+     Contratante, según corresponda.
+
+ En caso que la Unidad Orgánica Responsable (UOR) formule observaciones a los
+     productos/entregables, estas deben ser efectuadas en un plazo máximo de 05 días
+     calendario siguientes a la presentación de dichos productos/entregables, y serán
+     comunicadas por la Unidad de Abastecimiento de la UE002 (o la que haga sus veces).
+
+ A su vez, el Consultor tendrá un plazo de hasta 03 días calendario posteriores para el
+     Levantamiento de las Observaciones que correspondan, computable a partir del primer
+     día siguiente de notificada el pliego de observaciones.
+
+ La Unidad Orgánica Responsable (UOR) podrá requerir hasta en 02 oportunidades la
+     subsanación de las observaciones. A partir de culminada la última oportunidad, el
+     requerimiento de subsanación podrá formularse bajo apercibimiento de resolución
+     contractual.
+
+ Por otro lado, en caso la Unidad Orgánica Responsable (UOR) se retrase y no cumpla
+     con realizar las verificaciones necesarias y otorgar la conformidad dentro del plazo, dicha
+     situación no debe afectar al Consultor con la aplicación de penalidades, siendo que solo
+     aplicará el plazo formal con el que cuenta La Unidad Orgánica Responsable (UOR) para
+     su evaluación.
+
+Dentro del plazo de la consultoría no se encuentran comprendidos los plazos que la Unidad
+Orgánica Responsable (UOR) utilice para, revisar, remitir y/o emitir observaciones,
+aprobaciones, y cualquier otro acto administrativo relacionado a las gestiones que demanden
+los Productos mencionados. Asimismo, no se considera dentro del plazo el levantamiento de
+observaciones por parte del CONSULTOR de ser el caso.
+
+9. PERFIL DEL CONSULTOR
+
+El consultor debe contar con el siguiente perfil mínimo:
+
+                                                          7
+N°  Requisitos                                           Criterio
+
+1 Formación Académica      Bachiller en Ingeniería Sistemas o Ingeniería
+                              Informática o Ingeniero de Software o Ingeniero en
+2 Capacitaciones              Computación o Ingeniería Industrial o en Ciencias
+                              de la Computación, Estadístico o afines
+
+                           Capacitación acreditada en cursos relacionados
+                              con: BigData, análisis de datos, arquitectura de
+                              datos o inteligencia de negocios (mínimo 60 horas
+                              acumuladas).
+
+                           Capacitación acreditada en cursos relacionados a
+                              Python o análisis de datos con Python o gestión de
+                              datos con Python (Mínimo 24 horas acumulada).
+
+                           Capacitación acreditada en cursos relacionados
+                              con base de datos tipo SQL o No SQL (Oracle o
+                              SQL Server u otros) (Mínimo 24 horas acumulada).
+
+                           Capacitación acreditada en Apache Hadoop
+                              (Apache Spark o Spark SQL o pyspark).
+
+                           Deseable, cursos o capacitaciones sobre el manejo
+                              de metodologías de gestión de proyectos o
+                              metodologías ágiles.
+
+3 Experiencia General      Experiencia mínima de siete (7) años en el ejercicio
+4 Experiencia Específica      de su profesión, en el sector privado o en el sector
+                              público.
+
+                           Experiencia profesional comprobable de tres (3)
+                              años en el sector público o privado, desempeñando
+                              como ingeniero de datos, analista de datos o
+                              analista BI o similares.
+
+                           Experiencia comprobable de haber participado
+                              como mínimo en dos (2) proyectos referidos a
+                              implementaciones de Datawarehouse y/o
+                              Inteligencia de Negocios y/o Data Lake en el sector
+                              público o privado, en los roles de ingeniero de datos
+                              o arquitecto de datos o analista de datos o data
+                              science o similares.
+
+                           Experiencia comprobable de haber participado
+                              como mínimo en un (1) proyecto referido a
+                              implementaciones de Datawarehouse y/o
+                              Inteligencia de Negocios y/o Data Lake bajo el
+                              ecosistema de Apache Hadoop en el sector público
+                              o privado, en los roles de ingeniero de datos o
+                              arquitecto de datos o analista de datos o data
+                              science o similares.
+
+Nota: La experiencia general y específica será contabilizada desde la fecha de egresado.
+
+10. MONTO, FORMA Y CONDICIONES DE PAGO
+      El monto total como contraprestación por la consultoría asciende a la suma de S/ 80,000.00
+      (Ochenta mil y 00/100 soles), incluidos impuestos de Ley y todo costo o retención que
+      recaiga en el servicio; no debiendo proceder pagos a cuenta por servicios no efectuados, ni
+      adelanto alguno.
+
+                          8
+No incluye los costos por concepto de pasajes y viáticos que resulten necesarios para el
+desarrollo de la consultoría.
+
+Cada uno de los pagos al consultor se realizará luego de la presentación y aprobación de
+cada uno de los productos entregados en los plazos previstos para la consultoría dispuestos
+en el numeral 8, los cuales deberá adjuntar el respectivo recibo de honorarios profesionales.
+
+La contraprestación se realizará después de ejecutada la prestación y otorgada la
+conformidad, de acuerdo con el siguiente detalle:
+
+N° de pago N° de Producto        Retribución
+                                por producto
+Primer pago   Primer Producto
+              Segundo Producto          S/
+Segundo pago  Tercer Producto       S/. 0.00
+Tercer pago   Cuarto Producto     S/. 10,000
+Cuarto pago   Quinto Producto     S/. 10,000
+Quinto pago   Sexto Producto      S/. 10,000
+Sexto pago    Séptimo Producto    S/. 10,000
+Séptimo pago  Octavo Producto     S/. 10,000
+Octavo pago   Noveno Producto     S/. 10,000
+                                  S/. 10,000
+                                  S/. 10,000
+
+    El pago se efectuará dentro de los quince (15) días calendario siguientes a la presentación
+    de los productos señalados en los presentes términos de referencia, los cuales deberán
+    adjuntar el respectivo comprobante de pago y conformidad del producto correspondiente.
+
+11. LUGAR DE PRESTACIÓN DEL SERVICIO
+
+      El servicio será brindado de manera remota y/o presencial y/o mixto según lo requiera la
+      Subgerencia de Sistemas de Información y Analítica de Datos (SINFA). Es pertinente
+      señalar que, en el caso de actividades presenciales, estas se desarrollarán en las oficinas
+      de la Contraloría General de la República (CGR).
+
+12. COORDINACIÓN, SUPERVISIÓN Y CONFORMIDAD
+
+    El consultor deberá reportar y coordinar sus actividades con la Subgerencia de Sistemas de
+    Información y Analítica de Datos (SINFA), quien otorgará la conformidad a los productos e
+    informes que presente.
+
+    Asimismo, por la naturaleza de sus actividades, el consultor deberá coordinar con el personal
+    de la Subgerencia de Sistemas de Información y Analítica de Datos (SINFA) y otras unidades
+    orgánicas intervinientes en el Proyecto, siendo potestad de la y Subgerencia de Sistemas de
+    Información y Analítica de Datos (SINFA) la coordinación o enlace entre el consultor y otras
+    unidades orgánicas.
+
+    La coordinación, supervisión y emisión de la conformidad de los productos será realizada por
+    la Subgerencia de Sistemas de Información y Analítica de Datos (SINFA), en su calidad de
+    Unidad Orgánica Responsable (UOR)
+
+13. ACCESOS
+
+                                                                                                                                     9
+    El consultor tendrá acceso a:
+
+          Modo consulta a las bases de datos que se utilizarán para la implementación de la
+               solución.
+
+          Herramientas colaborativas que se usan en el proceso de desarrollo de software en
+               la CGR.
+
+14. DERECHOS DE PROPIEDAD Y CONFIDENCIALIDAD DE LA INFORMACIÓN
+
+    EL CONSULTOR deberá declarar que en la medida de que el servicio prestado es por
+    encargo, y el costo de su ejecución es asumida por la CGR; todo producto o materiales
+    (impresos, estudios, informes, gráficos, programas, software de computación u otros), que
+    se genere por el servicio, es de propiedad de la CGR, no constituyéndose títulos de propiedad,
+    derechos de autor y otro tipo de derechos para el Consultor; el mismo que a mérito de los
+    presente TDR, cede en forma exclusiva y gratuita, sin generar retribución adicional a lo
+    estipulado en el presente documento.
+
+    EL CONSULTOR se obliga a mantener la confidencialidad y reserva absoluta en el manejo
+    de información a la que se tenga acceso y que se encuentre relacionada con la prestación,
+    quedando prohibido revelar dicha información a terceros (excepto al BID), además del
+    cumplimiento de las Políticas de Seguridad de la Información de la CGR y sus procedimientos
+    vigentes, establecidos para asegurar su cumplimiento.
+
+    En tal sentido, EL CONSULTOR deberá dar cumplimiento a todas las políticas y estándares
+    definidos por la Entidad, en materia de seguridad de la información. Dicha obligación
+    comprende la información que se entrega, como también la que se genera durante la
+    realización de las actividades y la información producida una vez que se haya concluido la
+    prestación. Dicha información puede consistir en mapas, dibujos, fotografías, mosaicos,
+    planos, informes, recomendaciones, cálculos y demás documentos e información compilados
+    o recibidos por EL CONSULTOR.
+
+    La CGR establece los lineamientos de seguridad de la información con proveedores en el
+    siguiente enlace:
+
+    https://doc.contraloria.gob.pe/SGSI/Lineamientos_Seguridad_Informacion_con_Proveedores
+    _2025.pdf
+
+15. ANTICORRUPCIÓN Y ANTISOBORNO
+
+     A la suscripción de este contrato, EL CONSULTOR declara y garantiza no haber ofrecido,
+     negociado, prometido o efectuado ningún pago o entrega de cualquier beneficio o incentivo
+     ilegal, de manera directa o indirecta, a los evaluadores del proceso de contratación o
+     cualquier servidor de la entidad contratante.
+
+     Asimismo, EL CONSULTOR se obliga a mantener una conducta proba e íntegra durante la
+     vigencia del contrato, y después de culminado el mismo en caso existan controversias
+     pendientes de resolver, lo que supone actuar con probidad, sin cometer actos ilícitos, directa
+     o indirectamente.
+
+     Aunado a ello, EL CONSULTOR se obliga a abstenerse de ofrecer, negociar, prometer o dar
+     regalos, cortesías, invitaciones, donativos o cualquier beneficio o incentivo ilegal, directa o
+     indirectamente, a funcionarios públicos, servidores públicos, locadores de servicios o
+     proveedores de servicios de la Unidad Orgánica Responsable (UOR), de la dependencia
+     encargada de la contratación, actores del proceso de contratación y/o cualquier servidor de
+     la entidad contratante, con la finalidad de obtener alguna ventaja indebida o beneficio ilícito.
+     En esa línea, se obliga a adoptar las medidas técnicas, organizativas y/o de personal
+     necesarias para asegurar que no se practiquen los actos previamente señalados.
+
+                                                                                                                                    10
+         Adicionalmente, EL CONSULTOR se compromete a denunciar oportunamente ante las
+         autoridades competentes los actos de corrupción o de inconducta funcional de los cuales
+         tuviera conocimiento durante la ejecución del contrato con LA ENTIDAD CONTRATANTE.
+
+         Tratándose de una persona jurídica, lo anterior se extiende a sus accionistas,
+         participacionistas, integrantes de los órganos de administración, apoderados, representantes
+         legales, funcionarios, asesores o cualquier persona vinculada a la persona jurídica que
+         representa; comprometiéndose a informarles sobre los alcances de las obligaciones
+         asumidas en virtud del presente contrato.
+
+         Finalmente, el incumplimiento de las obligaciones establecidas en esta cláusula, durante la
+         ejecución contractual, otorga a LA ENTIDAD CONTRATANTE el derecho de resolver total o
+         parcialmente el contrato. En ningún caso, dichas medias impiden el inicio de las acciones
+         civiles, penales y administrativas a que hubiera lugar.
+
+         EL CONSULTOR se compromete en cumplir la política antisoborno del programa aprobada
+         y regulada mediante resolución la cual se encuentra disponible en el siguiente enlace web:
+        https://cdn.www.gob.pe/uploads/document/file/3248111/Resoluci%C3%B3n%20de%20Contr
+        alor%C3%ADa%20N%C2%B0%20229-2022-CG.pdf.pdf?v=1654888578
+
+   16. PENALIDADES
+
+  a. Penalidad diaria por mora
+               La penalidad se aplica por cada día de retraso injustificado en la prestación de la
+                   ejecución del servicio.
+               Penalidad diaria:
+                   Penalidad diaria = 0.10 x Monto / (F x Plazo en días)
+                   Donde F = 0.40
+               Tanto el monto como el plazo se refieren al monto vigente del producto o ítem que
+                   debió ejecutarse, que fuera materia de retraso.
+
+  b. Consideraciones generales:
+               Cuando el Consultor no cumpla con la presentación de los productos/entregables
+                   de acuerdo con las características y condiciones estipuladas, se considera
+                   como no presentado, aplicándose la penalidad por cada día de retraso hasta su
+                   presentación, en este escenario, la Entidad comunicará al Consultor dicho
+                   incumplimiento.
+               La penalidad se deducirá de pagos parciales o finales.
+               Se exceptúa la penalidad si el Consultor acredita objetivamente que el retraso no le
+                   es imputable.
+               Al alcanzar el límite máximo del 10 % acumulado de las penalidades por mora, la
+                   Entidad podrá resolver el contrato por incumplimiento.
+
+c. Identificación del retraso injustificado:
+               Cuando el Consultor subsana las observaciones dentro del plazo otorgado, no
+                   se aplicará penalidad.
+               Cuando el Consultor cumple con levantar las observaciones fuera del plazo
+                   otorgado en las dos (02) rondas de observaciones debidamente notificadas, se
+                   considera la aplicación de penalidad por cada día de retraso contabilizado desde el
+                   día siguiente de la fecha de vencimiento del plazo otorgado.
+               Cuando vencido el plazo otorgado para subsanar las dos (02) rondas de
+                   observaciones y el Consultor/Proveedor/Contratista presenta dentro del plazo
+                   otorgado, pero persisten las observaciones. La Unidad Orgánica Responsable
+
+                                                                                                                                         11
+                (UOR) en mérito a su evaluación técnica podrá otorgar periodos adicionales para el
+                levantamiento de la persistencia de observaciones, sin perjuicio de las
+                penalidades respectivas. En este caso, se aplica la penalidad computando los días
+                de retraso desde el vencimiento del plazo otorgado con la primera notificación
+                de observación, hasta que la subsane, incluyéndose el plazo formal con el que
+                cuenta la Unidad Orgánica Responsable (UOR) para su evaluación.
+17. ANEXOS:
+    Anexo N° 01: Especificaciones de los Entregables
+    Anexo N° 02: Check list de los criterios de aceptación
+    Anexo N° 03: Arquitectura de la Plataforma de Minería de Datos
+    Anexo N° 04: Glosario de términos
+
+                                                                                                                                    12
+                                                          ANEXO 1
+
+                               ESPECIFICACIONES DE LOS ENTREGABLES
+
+I. ESPECIFICACIONES GENERALES
+      Los informes deben redactarse teniendo en cuenta las siguientes especificaciones:
+
+      1. Letra arial 11.
+      2. Espacio simple.
+      3. Carátula indicando, entre otros, nombre de consultoría, nombre de consultor y
+
+             número de producto.
+      4. Impresión a doble cara.
+      5. Páginas numeradas en la parte inferior derecha.
+      6. Índice numerado de páginas.
+
+II. ESPECIFICACIONES POR TIPO DE PRODUCTO
+
+II.1. Plan de Trabajo
+      Tendrá la siguiente estructura:
+
+      1. Carátula
+      2. Índice
+      3. Introducción
+      4. Objetivo de consultoría
+      5. Metodología de trabajo
+      6. Productos a alcanzar
+      7. Actividades a cumplir por cada producto
+      8. Cronograma de productos y actividades
+      9. Conclusiones y recomendaciones.
+      10. Anexo(s)
+
+II.2. Informe del Producto
+      Tendrá la siguiente estructura:
+
+      1. Carátula
+      2. Resumen ejecutivo
+      3. Índice
+      4. Introducción
+      5. Objetivo de consultoría
+      6. Productos alcanzados
+      7. Actividades realizadas
+      8. Grado de cumplimiento del producto
+      9. Dificultades y limitaciones encontradas
+      10. Conclusiones y Recomendaciones
+11. Anexo(s)
+
+II.3. Informe
+      Tendrá la siguiente estructura:
+
+      1. Carátula
+      2. Resumen ejecutivo
+      3. Índice
+      4. Introducción
+      5. Objetivo de consultoría
+      6. Productos alcanzados
+      7. Conclusiones y Recomendaciones
+      8. Anexo(s)
+
+                                                                                                                                     13
+III. CONSIDERACIONES GENERALES DEL PRODUCTO, A SER TENIDAS EN CUENTA:
+
+     a. Tapa del documento en el que se precisa el nombre de la consultoría, nombre del
+           producto,el nombre del autor, la fecha de presentación y el nombre y logo de la CGR.
+
+     b. Incluir índice de capítulos, así como de tablas o cuadros y de gráficos cuando
+           corresponda.
+
+     c. Incluir una lista de abreviaturas o acrónimos, en caso de que se usen siglas en el
+           documento.
+
+     d. Incluir un glosario de términos que requieran de explicación inicial para facilitar la
+           lectura deldocumento.
+
+     e. El resumen ejecutivo dará cuenta de los aspectos más relevantes del trabajo
+           encargado.
+
+     f. De acuerdo con la naturaleza y características del producto a entregar, el
+           documento sedividirá en capítulos, los que estarán debidamente numerados.
+
+     g. Las páginas del documento estarán debidamente numeradas.
+     h. Las referencias bibliográficas deberán incluirse al final del documento.
+     i. El consultor presentará sus productos en la secretaría de la Unidad Orgánica
+
+           supervisora.
+     j. A cada producto corresponde un pago y, en consecuencia, una fecha improrrogable de
+
+           entrega.
+     k. El Consultor se compromete a ceder los derechos patrimoniales de autor de los
+
+           productos ydocumentos elaborados.
+     l. El Consultor se compromete a guardar reserva de toda aquella información interna a la
+
+           que tenga acceso para la ejecución de esta consultoría, cualquier uso de esta
+           información, deberá ser autorizada previamente por la CGR.
+     m. Todos los productos deberán de ser entregados y sustentados en la forma y plazos que
+           se indican en estos Términos de Referencia.
+     n. A la entrega del último producto, se adjuntarán las bases de datos, códigos de
+           programación u otros materiales utilizados por el Consultor o que le hayan sido
+           entregados a este por la CGR durante el proceso de ejecución de la consultoría.
+
+                                                                                                                                     14
+N° Categoría                     ANEXO 02                                               Cumple
+                                 Criterio de Aceptación                                 SI NO
+
+                    CONFORMIDAD TÉCNICA Y ESTÁNDARES
+
+1  Arquitectura y    La solución entregada cumple con la metodología institucional
+   Metodología       de la CGR, el Procedimiento "Desarrollo de Soluciones" y los
+                     Estándares de base de datos vigentes.
+
+1  Gestión de        El código fuente de la aplicación en Python o equivalente ha
+   Código            sido almacenado en el repositorio Gitlab de la CGR, según el
+                     estándar de la entidad.
+
+1  Despliegue de     Se ha verificado el despliegue exitoso de la solución, incluyendo
+   Ambientes         el script de base de datos y la aplicación en Python, en los
+                     ambientes de certificación y producción requeridos.
+
+1  Adherencia a      La aplicación en Python ha sido elaborada utilizando las
+   Tecnologías       tecnologías específicas requeridas (pyspark y Spark SQL) bajo
+                     los estándares de la GTIGD de la CGR.
+
+                     FUNCIONALIDAD Y CALIDAD DEL DATO
+
+2  Procesamiento     Los datos han sido sometidos a procesos de Extracción,
+   de Datos          Transformación, limpieza y Carga (ETL) y se encuentran
+                     validados en la capa de servicio (capa oro/plata) del lakehouse.
+
+2  Validación        La lógica implementada (incluyendo los scripts para casos
+   Funcional         atípicos) identifica correctamente los casos atípicos según la
+                     normativa vigente.
+
+                          Los datos procesados y validados están disponibles y
+2 Disponibilidad accesibles para ser consumidos por los tableros de control y/o el
+
+                          sistema integrado de control gubernamental.
+
+2 Rendimiento        La ejecución del proceso ETL (incluyendo los DAGs elaborados)
+                     cumple con los tiempos de procesamiento definidos por la
+                     Subgerencia de Sistemas de Información y Analítica de Datos
+                     (SINFA).
+
+3  Modelado de               DISEÑO Y DOCUMENTACIÓN
+   Datos
+                     El y/o el diagrama final del modelo de datos son consistentes
+                     con la y el diseño lógico.
+
+3  Trazabilidad de   Se ha elaborado y entregado el que describe el flujo de carga en
+   Datos             las diferentes capas de la plataforma de minería de datos.
+
+3  Metadatos y       Se ha entregado y el es completo y consistente con la estructura
+   Estructura        de la base de datos implementada a través de los scripts.
+
+                     La documentación técnica necesaria para el despliegue de la
+
+3  Soporte  Técnico  solución en certificación y producción (incluyendo el manual de
+                     instalación y objetos de base de datos) ha sido entregada y es
+
+                     funcional.
+
+                                                                                        15
+   Transferencia Se ha completado el informe de transferencia de conocimiento
+
+4 de          al personal técnico, incluyendo el material para la capacitación
+
+   Conocimiento técnica de los procesos ETL elaborados.
+
+                    CUMPLIMIENTO Y GESTIÓN
+
+              El consultor ha cedido los derechos de propiedad de los
+
+4  Legal y    productos y se compromete a mantener la confidencialidad de la
+
+   Confidencialidad información, cumpliendo con las políticas de seguridad de la
+
+              CGR.
+
+                          Todas las observaciones realizadas por la Entidad a los
+4 Observaciones productos previos han sido levantadas y subsanadas dentro de
+
+                          los plazos establecidos (máximo dos rondas de revisión).
+
+4 Integridad  El producto final (documento técnico) cumple con las
+              especificaciones generales de formato (ej. letra Arial 11, índice,
+              carátula, resumen ejecutivo) según el Anexo 1.
+
+                                                  ANEXO 03
+            ARQUITECTURA DE LA PLATAFORMA DE MINERÍA DE DATOS
+
+                    Anexo N.º 04 : Glosario de Términos
+
+                                                                                                                16
+    Sigla                                              Descripción
+CGR        Contraloría General de la República.
+CUI        Código Único de Inversión.
+DMA        Subsistema de Datamart e Interoperabilidad.
+eCONTROL   Subsistema Expediente Digital del Servicio de Control.
+GTIGD      Gerencia de Tecnologías de la Información y Gobierno Digital.
+MOP        Manual Operativo del Proyecto
+PSC        Subsistema de Planeamiento de los Servicios de Control.
+           Subsistema de Seguimiento a la Implementación de Recomendaciones y
+SERES      Situaciones Adversas de Resultados a los Servicios de Control.
+           Subgerencia de Sistemas de Información y Analítica de Datos.
+SINFA      Unidad Orgánica responsable.
+UOR
+
+           17
+
