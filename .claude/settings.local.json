@@ -7,7 +7,26 @@
       "Bash(pip show:*)",
       "Bash(py --version)",
       "Bash(npm install:*)",
-      "Bash(md-to-pdf temas-po-unificado.md --pdf-options '{\"\"format\"\":\"\"A4\"\",\"\"margin\"\":{\"\"top\"\":\"\"20mm\"\",\"\"bottom\"\":\"\"20mm\"\",\"\"left\"\":\"\"15mm\"\",\"\"right\"\":\"\"15mm\"\"}}')"
+      "Bash(md-to-pdf temas-po-unificado.md --pdf-options '{\"\"format\"\":\"\"A4\"\",\"\"margin\"\":{\"\"top\"\":\"\"20mm\"\",\"\"bottom\"\":\"\"20mm\"\",\"\"left\"\":\"\"15mm\"\",\"\"right\"\":\"\"15mm\"\"}}')",
+      "Bash(pdftotext -layout \"Trabajo-Empresa/Contraloria/Documentos-ejemplo/1.1 PLAN DE GESTION DE PROYECTO EXP 0820250832307_ADJ_A1.pdf\" \"Trabajo-Empresa/Contraloria/Documentos-ejemplo/plan-ejemplo.txt\")",
+      "Bash(mkdir -p \"Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/informe\" \"Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/anexos\" && ls -la \"Trabajo-Empresa/Contraloria/Entregables/\")",
+      "Read(//c/Users/ferkr/.claude/projects/c--Cristian-Proyectos-temas-java/memory/**)",
+      "Read(//c/Users/ferkr/.claude/projects/c--Cristian-Proyectos-temas-java/**)",
+      "Bash(/mingw64/bin/pdftoppm -f 1 -l 2 -r 100 -png \"Trabajo-Empresa/Contraloria/Documentos-ejemplo/1.1 PLAN DE GESTION DE PROYECTO EXP 0820250832307_ADJ_A1.pdf\" \"Trabajo-Empresa/Contraloria/Documentos-ejemplo/_pag\")",
+      "Read(//mingw64/**)",
+      "Read(//usr/**)",
+      "Bash(pdftotext -layout \"Trabajo-Empresa/Contraloria/Documentos-Previos/Ingrese-Documentos/Documentos-Requertidos/CARTA-000133-2026-GPROY.pdf\" \"Trabajo-Empresa/Contraloria/Documentos-Previos/Ingrese-Documentos/Documentos-Requertidos/_carta.txt\")",
+      "Bash(python -c \"import openpyxl; print\\('openpyxl', openpyxl.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python \"Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/anexos/_generar_gantt.py\")",
+      "Bash(python -c \"import pypandoc; print\\('pandoc:', pypandoc.get_pandoc_version\\(\\)\\)\")",
+      "Bash(python -c \"import docx; print\\('python-docx', docx.__version__\\)\")",
+      "Bash(python \"Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/_convertir_a_word.py\")",
+      "Bash(python -c \"import pypandoc; print\\(pypandoc.convert_file\\(r'Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/informe/P1-Plan-de-Trabajo.docx', 'markdown', extra_args=['--wrap=none']\\)\\)\")",
+      "Bash(pdftotext -layout \"Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/informe/P1-Plan-de-Trabajo.pdf\" \"Trabajo-Empresa/Contraloria/Entregables/P1-Plan-de-Trabajo/informe/_actual.txt\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Cristian\\Proyectos\\temas-java\\Trabajo-Empresa\\Contraloria\\Entregables\\P1-Plan-de-Trabajo"
     ]
   }
 }

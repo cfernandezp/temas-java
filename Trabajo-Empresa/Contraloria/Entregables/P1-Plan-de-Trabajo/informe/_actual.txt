@@ -1,0 +1,1188 @@
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+PROYECTO "MEJORAMIENTO DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL
+PARA UN CONTROL EFECTIVO, PREVENTIVO Y FACILITADOR DE LA GESTIÓN
+PÚBLICA" -- BID 3
+Componente 1 · Acción de Inversión 1.8.2 "Implementación del Sistema Integrado de los
+Servicios de Control Gubernamental -- Fase 2"
+
+                                                                                                                                             1
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+PLAN DE TRABAJO
+
+Consultoría: "Contratación de un Consultor Ingeniero de Datos I para el Desarrollo del Módulo
+de Análisis de Datos para dar Soporte a los Auditores durante la Ejecución de los Servicios de
+Control en el Sistema Integrado de Control del Proyecto Interno 1.8.2"
+
+Campo                     Detalle
+Proceso de Selección      SCI N° 013-2026-CG-UE002/BID3
+Carta de Adjudicación     N° 000133-2026-GPROY (20 de abril de 2026)
+Contrato                  N° 062-2026-CG-UE002/BID
+Suscripción del Contrato  28 de abril de 2026
+Fecha de Presentación     05 de mayo de 2026
+Consultor                 Cristian Anthony Fernández Pérez
+DNI                       44911435
+Profesión                 Ingeniero de Datos
+Dirigido a                Subgerencia de Sistemas de Información y
+                          Analítica de Datos (SINFA)
+Con Copia a               Subgerencia de Gestión de Inversiones
+
+Lima -- Perú Mayo 2026
+
+                                                                                                2
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+Historial de Revisiones
+
+Fecha                    Versión  Descripción              Autor
+05/05/2026               1.0
+                                  Elaboración inicial del  Cristian Anthony
+                                  Plan de Trabajo.         Fernández Pérez
+
+                                                                             3
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+Tabla de Contenido
+
+    1. Introducción
+    2. Objetivo de la consultoría
+
+              o 2.1 Objetivo general
+              o 2.2 Objetivos específicos
+    3. Metodología de trabajo
+              o 3.1 Marco normativo y técnico
+              o 3.2 Enfoque del trabajo
+              o 3.3 Arquitectura técnica (Anexo 03 del TDR)
+              o 3.4 Stack tecnológico
+              o 3.5 Buenas prácticas de ingeniería de datos
+              o 3.6 Herramientas
+              o 3.7 Confidencialidad y seguridad
+              o 3.8 Coordinación y supervisión
+    4. Productos a alcanzar
+              o 4.1 Cuadro resumen
+              o 4.2 Producto N° 1 -- Plan de Trabajo
+              o 4.3 Producto N° 2 -- Caso atípico 1: Ingesta inicial
+              o 4.4 Producto N° 3 -- Caso atípico 1: Fuentes complementarias y linaje
+              o 4.5 Producto N° 4 -- Caso atípico 2: Ingesta inicial
+              o 4.6 Producto N° 5 -- Caso atípico 2: Linaje, modelo y certificación
+              o 4.7 Producto N° 6 -- Caso atípico 3: Ingesta inicial
+              o 4.8 Producto N° 7 -- Caso atípico 3: Fuentes complementarias y linaje
+              o 4.9 Producto N° 8 -- Despliegue, matriz bus dimensional y validación
+              o 4.10 Producto N° 9 -- Validación, observaciones y transferencia de conocimiento
+    5. Actividades a cumplir por cada producto
+              o 5.1 Producto N° 1 -- Plan de Trabajo
+              o 5.2 Producto N° 2 -- Caso atípico 1: Ingesta inicial
+              o 5.3 Producto N° 3 -- Caso atípico 1: Fuentes complementarias y linaje
+              o 5.4 Producto N° 4 -- Caso atípico 2: Ingesta inicial
+              o 5.5 Producto N° 5 -- Caso atípico 2: Linaje, modelo y certificación
+              o 5.6 Producto N° 6 -- Caso atípico 3: Ingesta inicial
+              o 5.7 Producto N° 7 -- Caso atípico 3: Fuentes complementarias y linaje
+              o 5.8 Producto N° 8 -- Despliegue, matriz bus dimensional y validación
+              o 5.9 Producto N° 9 -- Validación, observaciones y transferencia de conocimiento
+    6. Cronograma de productos y actividades
+              o 6.1 Cronograma maestro
+              o 6.2 Diagrama de Gantt
+              o 6.3 Plazos de revisión y subsanación
+    7. Conclusiones y recomendaciones
+              o 7.1 Conclusiones
+              o 7.2 Recomendaciones
+
+                                                                                                                                             4
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    8. Anexos
+              o 8.1 Lista de abreviaturas y acrónimos
+              o 8.2 Glosario de términos
+              o 8.3 Diagrama de la Plataforma de Minería de Datos
+              o 8.4 Diagrama de Gantt del cronograma
+
+                                                                                                                                            5
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+1. Introducción
+En el marco del Contrato N° 062-2026-CG-UE002/BID, suscrito el 28 de abril de 2026 con la
+Contraloría General de la República (CGR), presento el presente Plan de Trabajo
+correspondiente al Producto N° 1 de la consultoría "Contratación de un Consultor Ingeniero de
+Datos I para el Desarrollo del Módulo de Análisis de Datos para dar Soporte a los Auditores
+durante la Ejecución de los Servicios de Control en el Sistema Integrado de Control del
+Proyecto Interno 1.8.2".
+La consultoría se enmarca en el Proyecto de Inversión Pública con Código Único de Inversiones
+(CUI) N° 2412703, denominado "Mejoramiento de los servicios de control gubernamental para
+un control efectivo, preventivo y facilitador de la gestión pública" (Proyecto BID 3), financiado
+mediante el Contrato de Préstamo N° 4724/OC-PE suscrito entre la República del Perú y el
+Banco Interamericano de Desarrollo (BID) el 5 de febrero de 2019. Específicamente, mi servicio
+se orienta al Componente 1 -- "Adecuados procesos para un control efectivo y eficiente"
+y a la Acción de Inversión 1.8.2 -- "Implementación del Sistema Integrado de los
+Servicios de Control Gubernamental -- Fase 2", cuya unidad orgánica responsable es la
+Subgerencia de Sistemas de Información y Analítica de Datos (SINFA).
+El presente documento tiene por finalidad establecer, de manera ordenada y verificable, el
+objetivo, la metodología, los productos, las actividades y el cronograma que asumiré durante los
+doscientos cuarenta (240) días calendario de ejecución del servicio. Su aprobación por parte de
+la SINFA constituye la línea base sobre la cual se medirá el avance, las conformidades
+parciales y el cierre final de la consultoría.
+
+                                                                                                                                             6
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+2. Objetivo de la consultoría
+
+Conforme al numeral 3 de los Términos de Referencia, mi consultoría se orienta a los siguientes
+objetivos:
+
+2.1 Objetivo general
+
+Brindar soporte especializado como Ingeniero de Datos durante el desarrollo del componente
+"Módulo de análisis de datos para dar soporte a los auditores durante la ejecución de los
+servicios de control", del proyecto interno 1.8.2, con la finalidad de disponer datos procesados y
+filtrados (Extracción, Transformación, Limpieza y Carga) provenientes de fuentes externas e
+internas, orientados a la identificación de casos atípicos en los que se transgrede una normativa
+vigente. La información resultante será de utilidad para la labor del auditor.
+
+2.2 Objetivos específicos
+    · Identificar las fuentes externas e internas necesarias para el procesamiento de los datos.
+    · Realizar la limpieza y transformación de los datos en las capas Plata y Oro de la
+         plataforma de minería de datos de la CGR.
+    · Elaborar el o los DAG(s) de los procesos ETL.
+    · Disponer los datos procesados y validados para ser consumidos por los tableros de
+         control y/o el Sistema Integrado de Control Gubernamental (SICG).
+
+3. Metodología de trabajo
+
+Mi metodología se ajusta a los lineamientos institucionales de la CGR establecidos por la
+Gerencia de Tecnologías de la Información y Gobierno Digital (GTIGD), bajo supervisión de la
+SINFA y en coordinación con la Subgerencia de Gestión de Inversiones, conforme al numeral 5
+del TDR.
+
+3.1 Marco normativo y técnico
+    · Procedimiento "Desarrollo de Soluciones" de la CGR.
+    · Estándares de Base de Datos vigentes de la CGR.
+    · Lineamientos de Seguridad de la Información con Proveedores de la CGR.
+    · Estándares técnicos de la GTIGD.
+    · Norma técnica peruana NTP-ISO/IEC 12207 como referencia para el ciclo de vida del
+         software, en línea con el Procedimiento "Desarrollo de Soluciones".
+
+3.2 Enfoque del trabajo
+
+La consultoría se ejecuta de manera iterativa, considerando cada uno de los nueve productos
+como un mini-ciclo de entrega que recorre las siguientes fases, alineadas a la norma NTP-
+ISO/IEC 12207 y a la arquitectura medallón de la Plataforma de Minería de Datos:
+
+                                                                                                                                             7
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+Fase            Propósito                                           Capa de datos asociada
+Identificación                                                      --
+Ingesta         Catastro de fuentes externas e                      Bronce
+Transformación  internas, esquemas, periodicidad                    Plata
+Modelado        y reglas de negocio.                                Oro
+Orquestación                                                        Transversal
+Validación      Carga cruda                           al lakehouse  --
+Entrega         preservando                                         Servicio
+                metadata.                             histórico  y
+
+                Limpieza, casteo de tipos,
+                normalización y controles de
+                calidad.
+
+                Construcción del modelo
+                dimensional y agregaciones de
+                negocio.
+
+                Encapsulamiento del ETL en
+                DAG(s) de Apache Airflow.
+
+                Verificación funcional con SINFA
+                y aplicación del Anexo 02 del
+                TDR.
+
+                Publicación en GitLab CGR y
+                presentación formal por Mesa de
+                Partes Virtual.
+
+Cada producto avanza de manera secuencial sobre estas fases, lo cual permite ir consolidando
+el lakehouse por caso atípico sin afectar la trazabilidad ni la idempotencia de los procesos
+previos.
+
+3.3 Arquitectura técnica (Anexo 03 del TDR)
+
+La Plataforma de Minería de Datos de la CGR sigue una arquitectura medallón con las
+siguientes capas:
+
+Capa            Función
+Bronce          Ingesta cruda e histórica de fuentes
+Plata           Filtrado, limpieza y refinado
+Oro             Nivel de negocio y agregación
+Servicio        Datos disponibles para consumo
+Modelo Tabular  Modelos analíticos
+Visualización   Tableros de control
+
+La ingesta admite modalidad batch, CDC/CDF y streaming, sobre fuentes estructuradas,
+semiestructuradas y no estructuradas.
+
+3.4 Stack tecnológico
+
+    · Almacenamiento: Apache Hadoop (HDFS) + Delta Lake (Parquet).
+    · Procesamiento: PySpark y Spark SQL.
+    · Orquestación: Apache Airflow (DAGs).
+
+                                                                                            8
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Metastore: HMS sobre MySQL.
+    · Recursos del clúster: Hadoop YARN.
+    · Capa de servicio: SQL Server + SSAS (modelo tabular).
+    · Visualización: Power BI.
+    · Repositorio de código: GitLab CGR.
+
+3.5 Buenas prácticas de ingeniería de datos
+
+    · Idempotencia: procesos diseñados para re-ejecutarse sin duplicar datos.
+    · Trazabilidad: linaje completo de datos por capa, documentado en cada producto.
+    · Calidad de dato: controles explícitos en cada transición Bronce  Plata  Oro.
+    · Versionamiento: todo código fuente en el repositorio GitLab de la CGR conforme al
+
+         estándar institucional (criterio de aceptación del Anexo 02 del TDR).
+    · Documentación: diccionario de datos, diagrama de linaje y matriz bus dimensional
+
+         como entregables formales.
+
+3.6 Herramientas                               Uso
+
+Herramienta                                    Repositorio de código fuente y control de versiones
+GitLab CGR                                     (criterio Anexo 02).
+
+Apache Airflow                                 Orquestación de los DAGs ETL.
+IDE de desarrollo (Visual Studio Code u otro)
+Mesa de Partes Virtual de la CGR               Edición de código PySpark/Spark SQL.
+
+Microsoft Teams / correo institucional         Canal oficial de presentación de productos a la
+                                               SINFA.
+Microsoft Office 365
+                                               Coordinación con la SINFA y la Subgerencia de
+Power BI Desktop                               Gestión de Inversiones.
+
+                                               Elaboración de la documentación técnica de los
+                                               productos.
+
+                                               Validación local de tableros previo al despliegue.
+
+3.7 Confidencialidad y seguridad
+
+    · Acceso únicamente en modo consulta a las bases de datos de la CGR.
+    · Cumplimiento estricto de las Políticas de Seguridad de la Información de la CGR y de los
+
+         lineamientos para proveedores.
+    · Cesión exclusiva y gratuita a la CGR de todo producto generado durante la consultoría.
+
+3.8 Coordinación y supervisión
+
+    · La SINFA, como Unidad Orgánica Responsable (UOR), establece los canales de
+         coordinación, valida los entregables y otorga la conformidad de los productos.
+
+    · La Subgerencia de Gestión de Inversiones recibe copia de las entregas presentadas
+         a través de la Mesa de Partes Virtual de la CGR.
+
+    · Los plazos de revisión y subsanación se rigen por el numeral 8 del TDR: hasta 5 días
+         calendario para la conformidad u observación por parte de la UOR; hasta 3 días
+         calendario para el levantamiento de observaciones por mi parte; hasta 2
+         oportunidades de subsanación.
+
+                                                         9
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+4. Productos a alcanzar
+
+La consultoría comprende la elaboración y entrega de nueve (9) productos secuenciales que
+cubren los tres casos atípicos prioritarios identificados por la SINFA. La siguiente tabla resume
+el alcance global; en las fichas posteriores detallo el contenido literal de cada producto
+conforme al numeral 7 del TDR.
+
+    Nota: El contenido específico de cada producto descrito en esta sección corresponde
+    al alcance establecido en el numeral 7 del TDR. Dicho alcance podrá ser precisado o
+    ajustado durante la ejecución del servicio, conforme a las directivas que emita la
+    SINFA en su calidad de Unidad Orgánica Responsable, la GTIGD o las instancias
+    superiores de la CGR, sin que ello implique modificación del número total de
+    productos, los plazos ni el monto contractual.
+
+4.1 Cuadro resumen
+
+N°  Producto             Caso atípico   Fuentes          Plazo (días)  Fecha límite
+                                        principales      7             05-05-2026
+1   Plan de              --             --                             28-05-2026
+                                                         30            27-06-2026
+    Trabajo                             SSI,                           27-07-2026
+                                        INFOBRAS
+2   Caso 1 --            Ausencia del                                  26-08-2026
+
+    Ingesta inicial ingeniero                                          25-09-2026
+
+                         residente y/o                                 25-10-2026
+
+                         supervisor                                    24-11-2026
+
+3   Caso 1 --            Ausencia del   MEF              60
+
+    Fuentes              ingeniero      Inversiones,
+
+    complementari residente y/o         SIAF,
+
+    as y linaje          supervisor     MEF_ANDAT
+
+4   Caso 2 --            Sancionados    SERVIR,          90
+
+    Ingesta inicial SERVIR              SUNEDU,
+
+                         durante        RNP, AIRHSP
+
+                         periodo de
+
+                         sanción
+
+5   Caso 2 --            Sancionados    SERVIR,          120
+
+    Linaje, modelo SERVIR               SUNEDU,
+
+    y certificación durante             RNP, AIRHSP
+
+                         periodo de
+
+                         sanción
+
+6   Caso 3 --            Beneficiarios  SISFOH,          150
+
+    Ingesta inicial de programas        JUNTOS,
+
+                         sociales que   PENSIÓN 65
+
+                         no
+
+                         corresponden
+
+7   Caso 3 --            Beneficiarios  MEF,             180
+
+    Fuentes              de programas   PLANILLAS,
+
+    complementari sociales que          RENIEC
+
+    as y linaje          no
+
+                         corresponden
+
+8   Despliegue,          Casos 1 y 2    --               210
+
+    matriz bus y
+
+                                                                                         10
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+                                      Fuentes
+
+N°  Producto         Caso atípico principales            Plazo (días) Fecha límite
+
+    validación de
+    Casos 1 y 2
+
+9   Validación       Caso 3           --                 240                  24-12-2026
+
+    Caso 3,
+
+    levantamiento
+
+    de
+
+    observaciones
+
+    y transferencia
+
+    Las fechas que coincidan con día no laborable se trasladan al día hábil siguiente,
+    conforme al numeral 8 del TDR. La retribución por cada producto se rige por el
+    numeral 10 del TDR.
+
+4.2 Producto N° 1 -- Plan de Trabajo
+
+Plazo: 7 días calendario · Fecha límite: 05/05/2026
+
+Conforme al numeral 7 del TDR, el presente Plan de Trabajo detalla los productos específicos
+derivados del servicio y las actividades requeridas para alcanzarlos. Incluye:
+
+    · Objetivo de la consultoría.
+    · Actividades.
+    · Plazos.
+    · Cronograma de actividades (Gantt).
+    · Conclusiones y recomendaciones.
+    · Descripción de la metodología de referencia a emplear.
+    · Programación, plazos y productos sujetos a los Términos de Referencia.
+
+4.3 Producto N° 2 -- Caso atípico 1: Ingesta inicial
+
+Plazo: 30 días calendario · Fecha límite: 28/05/2026
+
+Documento técnico que sustenta los entregables correspondientes al caso atípico "Ausencia del
+ingeniero residente y/o supervisor de la ejecución de la obra":
+
+    · Listado de fuentes externas e internas necesarias para el procesamiento de los datos.
+
+    · Scripts para la identificación de casos atípicos en fuentes de datos externas e internas:
+        SSI, INFOBRAS, entre otras fuentes.
+
+    · Documento de mapeo de campos de fuentes externas e internas (SSI, INFOBRAS, entre
+        otras) referidas a procesamiento ETL.
+
+4.4 Producto N° 3 -- Caso atípico 1: Fuentes complementarias y linaje
+
+Plazo: 60 días calendario · Fecha límite: 27/06/2026
+
+Documento técnico que sustenta los entregables adicionales del caso atípico "Ausencia del
+ingeniero residente y/o supervisor de la ejecución de la obra":
+
+                                                                                          11
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Listado de fuentes externas e internas adicionales necesarias para el procesamiento de
+         los datos.
+
+    · Scripts para la identificación de casos atípicos en fuentes externas como Consulta de
+         Inversiones del MEF, SIAF, MEF_ANDAT, entre otras.
+
+    · Documento de mapeo de campos de las fuentes externas (MEF, SIAF, MEF_ANDAT,
+         entre otras) referidas a procesamiento ETL.
+
+    · Aplicaciones Python elaboradas para el procesamiento de los datos (SSI, INFOBRAS,
+         MEF, SIAF, MEF_ANDAT, entre otras), basadas en PySpark y Spark SQL, bajo los
+         estándares de la GTIGD de la CGR.
+
+    · Diagrama de carga de los datos en las diferentes capas de la plataforma de minería de
+         datos de la CGR (linaje de los datos).
+
+4.5 Producto N° 4 -- Caso atípico 2: Ingesta inicial
+
+Plazo: 90 días calendario · Fecha límite: 27/07/2026
+
+Documento técnico que sustenta los entregables del caso atípico "Sancionados SERVIR que
+están laborando o laboraron durante el periodo de sanción":
+
+    · Scripts para la identificación de casos atípicos en fuentes externas como SERVIR,
+         SUNEDU, RNP, PLANILLAS AIRHSP, entre otras.
+
+    · Documento de mapeo de campos de las fuentes externas (SERVIR, SUNEDU, RNP,
+         PLANILLAS AIRHSP, entre otras) referidas a procesamiento ETL.
+
+4.6 Producto N° 5 -- Caso atípico 2: Linaje, modelo y certificación
+
+Plazo: 120 días calendario · Fecha límite: 26/08/2026
+
+Documento técnico que sustenta los entregables del caso atípico "Sancionados SERVIR que
+están laborando o laboraron durante el periodo de sanción":
+
+    · Diagrama de carga de los datos (SERVIR, SUNEDU, RNP, PLANILLAS AIRHSP, entre
+         otras) en las diferentes capas de la plataforma de minería de datos de la CGR (linaje de
+         los datos).
+
+    · Aplicaciones Python para el procesamiento de limpieza, transformación y carga de datos
+         (SERVIR, SUNEDU, RNP, PLANILLAS AIRHSP, entre otras), basadas en PySpark y
+         Spark SQL.
+
+    · Diagrama lógico de datos del modelo dimensional.
+    · Documentación técnica para el pase a certificación de los casos atípicos implementados
+
+         (scripts, ETLs).
+
+4.7 Producto N° 6 -- Caso atípico 3: Ingesta inicial
+
+Plazo: 150 días calendario · Fecha límite: 25/09/2026
+
+Documento técnico que sustenta los entregables del caso atípico "Beneficiarios de Programas
+Sociales que no corresponden":
+
+    · Scripts para la identificación de casos atípicos en fuentes externas como SISFOH,
+         JUNTOS, PENSIÓN 65, entre otras.
+
+                                                                                                                                           12
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Documento de mapeo de campos de las fuentes externas (SISFOH, JUNTOS,
+         PENSIÓN 65, entre otras) referidas a procesamiento ETL.
+
+    · Aplicaciones Python actualizadas para el procesamiento de limpieza, transformación y
+         carga de datos, basadas en PySpark y Spark SQL.
+
+4.8 Producto N° 7 -- Caso atípico 3: Fuentes complementarias y linaje
+
+Plazo: 180 días calendario · Fecha límite: 25/10/2026
+
+Documento técnico que sustenta los entregables del caso atípico "Beneficiarios de Programas
+Sociales que no corresponden":
+
+    · Scripts para la identificación de casos atípicos en fuentes externas como MEF,
+         PLANILLAS, RENIEC, entre otras.
+
+    · Documento de mapeo de campos de las fuentes externas (MEF, PLANILLAS, RENIEC,
+         entre otras) referidas a procesamiento ETL.
+
+    · Aplicaciones Python actualizadas para el procesamiento de limpieza, transformación y
+         carga de datos, basadas en PySpark y Spark SQL.
+
+    · Diagrama de carga de los datos en las diferentes capas de la plataforma de minería de
+         datos de la CGR (linaje de los datos).
+
+4.9 Producto N° 8 -- Despliegue, matriz bus dimensional y validación
+
+Plazo: 210 días calendario · Fecha límite: 24/11/2026
+
+Documento técnico que sustenta:
+
+    · Documentación técnica actualizada necesaria para el despliegue de la solución en los
+         ambientes de certificación y producción.
+
+    · Matriz bus del modelo dimensional implementado (según dimensiones cargadas).
+    · Aplicaciones Python actualizadas.
+    · Documento técnico que sustente la validación de datos procesados para los casos
+
+         atípicos:
+              o Sancionados SERVIR que están laborando o laboraron durante el periodo de
+                   sanción.
+              o Ausencia del ingeniero residente y/o supervisor en la ejecución de la obra.
+
+4.10 Producto N° 9 -- Validación, observaciones y transferencia de conocimiento
+
+Plazo: 240 días calendario · Fecha límite: 24/12/2026
+
+Documento técnico que sustenta:
+
+    · Informe de validación de datos procesados para el caso atípico "Beneficiarios de
+         programas sociales que no corresponden".
+
+    · Levantamiento de observaciones producto del proceso de certificación.
+    · Informe de transferencia de conocimiento al personal técnico, en referencia a los
+
+         productos implementados (incluye material para la capacitación técnica).
+    · Documentos técnicos actualizados, de corresponder.
+
+                                                                                                                                           13
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+5. Actividades a cumplir por cada producto
+
+Las actividades que ejecutaré por producto se desprenden del listado del numeral 6 del TDR y
+se aplican según el contenido específico que cada producto debe sustentar conforme al
+numeral 7 del TDR.
+
+5.1 Producto N° 1 -- Plan de Trabajo
+
+Fecha límite: 05/05/2026
+
+    · Lectura y análisis del TDR, la Carta de Adjudicación y el contrato suscrito.
+    · Identificación del marco normativo y técnico aplicable (Procedimiento "Desarrollo de
+
+         Soluciones", Estándares de BD CGR, Lineamientos GTIGD, NTP-ISO/IEC 12207).
+    · Definición de la metodología, el enfoque del trabajo, el stack tecnológico y las buenas
+
+         prácticas a aplicar durante la consultoría.
+    · Estructuración del cronograma de los nueve productos a partir de los plazos del numeral
+
+         8 del TDR.
+    · Redacción y presentación del Plan de Trabajo a la SINFA por Mesa de Partes Virtual.
+
+5.2 Producto N° 2 -- Caso atípico 1: Ingesta inicial
+
+Fecha límite: 28/05/2026
+
+    · Identificación de las fuentes externas e internas necesarias para el caso atípico -- SSI e
+         INFOBRAS.
+
+    · Coordinación con la SINFA para la habilitación de los accesos en modo consulta a las
+         fuentes internas.
+
+    · Análisis exploratorio de la estructura, periodicidad y reglas de negocio de cada fuente.
+    · Carga cruda de los datos al lakehouse en la capa Bronce.
+    · Limpieza y transformación preliminar en la capa Plata.
+    · Elaboración de los scripts de identificación del caso atípico sobre SSI e INFOBRAS.
+    · Elaboración del documento de mapeo de campos Fuente  Destino.
+    · Versionamiento del código en el repositorio GitLab de la CGR.
+    · Documentación técnica del producto.
+
+5.3 Producto N° 3 -- Caso atípico 1: Fuentes complementarias y linaje
+
+Fecha límite: 27/06/2026
+
+    · Identificación de las fuentes externas adicionales -- Consulta de Inversiones del MEF,
+         SIAF, MEF_ANDAT.
+
+    · Carga cruda al lakehouse de las fuentes adicionales.
+    · Limpieza y transformación en las capas Plata y Oro.
+    · Ampliación de los scripts de identificación del caso atípico considerando todas las
+
+         fuentes.
+    · Mapeo de campos de las fuentes adicionales.
+
+                                                                                                                                           14
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Elaboración de las aplicaciones Python en PySpark y Spark SQL para el procesamiento
+         integral del caso atípico (SSI, INFOBRAS, MEF, SIAF, MEF_ANDAT), bajo los
+         estándares de la GTIGD.
+
+    · Elaboración del DAG de Apache Airflow correspondiente.
+    · Elaboración del diagrama de linaje de los datos en las capas de la plataforma.
+    · Versionamiento en GitLab CGR.
+    · Documentación técnica del producto.
+
+5.4 Producto N° 4 -- Caso atípico 2: Ingesta inicial
+
+Fecha límite: 27/07/2026
+
+    · Identificación de las fuentes externas asociadas al caso atípico -- SERVIR, SUNEDU,
+         RNP, PLANILLAS AIRHSP.
+
+    · Coordinación con la SINFA para los convenios o accesos formales que requieran las
+         fuentes externas.
+
+    · Análisis exploratorio de la estructura, periodicidad y reglas de las fuentes.
+    · Carga cruda al lakehouse en capa Bronce.
+    · Limpieza y transformación inicial en capa Plata.
+    · Elaboración de los scripts de identificación del caso atípico.
+    · Mapeo de campos de las fuentes.
+    · Versionamiento en GitLab CGR.
+    · Documentación técnica del producto.
+
+5.5 Producto N° 5 -- Caso atípico 2: Linaje, modelo y certificación
+
+Fecha límite: 26/08/2026
+
+    · Consolidación de la carga de datos en las capas Bronce, Plata y Oro.
+    · Elaboración de las aplicaciones Python en PySpark y Spark SQL para la limpieza,
+
+         transformación y carga del caso atípico.
+    · Elaboración del DAG de Apache Airflow.
+    · Elaboración del diccionario de datos y del diagrama lógico del modelo.
+    · Elaboración del diagrama de linaje de los datos.
+    · Carga en la capa de servicio para consumo del SICG y tableros.
+    · Elaboración de la documentación técnica para el pase a certificación de los casos
+
+         atípicos implementados.
+    · Versionamiento en GitLab CGR.
+
+5.6 Producto N° 6 -- Caso atípico 3: Ingesta inicial
+
+Fecha límite: 25/09/2026
+
+    · Identificación de las fuentes externas -- SISFOH, JUNTOS, PENSIÓN 65.
+    · Coordinación con la SINFA para los accesos a las fuentes externas.
+    · Análisis exploratorio de las fuentes.
+
+                                                                                                                                           15
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Carga cruda al lakehouse.
+    · Limpieza y transformación inicial.
+    · Elaboración de los scripts de identificación del caso atípico.
+    · Mapeo de campos.
+    · Actualización de las aplicaciones Python para el procesamiento integral.
+    · Versionamiento en GitLab CGR.
+    · Documentación técnica del producto.
+
+5.7 Producto N° 7 -- Caso atípico 3: Fuentes complementarias y linaje
+
+Fecha límite: 25/10/2026
+
+    · Identificación de las fuentes externas adicionales -- MEF, PLANILLAS, RENIEC.
+    · Carga cruda al lakehouse.
+    · Limpieza y transformación en las capas Plata y Oro.
+    · Ampliación de los scripts de identificación del caso atípico.
+    · Mapeo de campos de las fuentes adicionales.
+    · Actualización de las aplicaciones Python en PySpark y Spark SQL.
+    · Elaboración o actualización del DAG de Apache Airflow.
+    · Elaboración del diagrama de linaje de los datos.
+    · Versionamiento en GitLab CGR.
+    · Documentación técnica del producto.
+
+5.8 Producto N° 8 -- Despliegue, matriz bus dimensional y validación
+
+Fecha límite: 24/11/2026
+
+    · Actualización de las aplicaciones Python según retroalimentación de la SINFA y de los
+         líderes usuarios.
+
+    · Carga en la capa de servicio (SQL Server) para los Casos 1 y 2.
+    · Disposición de los datos para los tableros de control y el SICG.
+    · Elaboración de la matriz bus del modelo dimensional implementado.
+    · Elaboración o actualización de la documentación técnica para el despliegue en
+
+         certificación y producción.
+    · Validación de los datos procesados para los Casos 1 y 2.
+    · Versionamiento en GitLab CGR.
+
+5.9 Producto N° 9 -- Validación, observaciones y transferencia de conocimiento
+
+Fecha límite: 24/12/2026
+
+    · Validación de los datos procesados para el Caso 3.
+    · Levantamiento de observaciones derivadas del proceso de certificación.
+    · Atención de incidencias durante la puesta en producción de la solución implementada.
+    · Elaboración del informe de transferencia de conocimiento al personal técnico, incluyendo
+
+         el material para la capacitación técnica.
+
+                                                                                                                                           16
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Actualización final de los documentos técnicos elaborados durante la consultoría.
+    · Cierre de versiones del repositorio GitLab CGR.
+
+6. Cronograma de productos y actividades
+
+El cronograma de la consultoría se construye a partir de los plazos del numeral 8 del TDR,
+contados a partir del día siguiente de la suscripción del contrato (28/04/2026  día 1:
+29/04/2026).
+
+6.1 Cronograma maestro
+
+N°  Producto            Plazo (días)      Fecha inicio   Fecha límite
+                        7                 29/04/2026     05/05/2026
+1   Plan de Trabajo     30                06/05/2026     28/05/2026
+                        60                29/05/2026     27/06/2026
+2   Caso 1 -- Ingesta
+                        90                28/06/2026     27/07/2026
+    inicial             120               28/07/2026     26/08/2026
+
+3   Caso 1 -- Fuentes   150               27/08/2026     25/09/2026
+                        180               26/09/2026     25/10/2026
+    complementarias y
+                        210               26/10/2026     24/11/2026
+    linaje
+                        240               25/11/2026     24/12/2026
+4   Caso 2 -- Ingesta
+
+    inicial
+
+5   Caso 2 -- Linaje,
+
+    modelo y
+
+    certificación
+
+6   Caso 3 -- Ingesta
+
+    inicial
+
+7   Caso 3 -- Fuentes
+
+    complementarias y
+
+    linaje
+
+8   Despliegue, matriz
+
+    bus dimensional y
+
+    validación
+
+9   Validación,
+
+    observaciones y
+
+    transferencia
+
+    Las fechas que coincidan con día no laborable se trasladan al día hábil siguiente,
+    conforme al numeral 8 del TDR.
+
+6.2 Diagrama de Gantt
+
+El detalle gráfico del cronograma, con el desglose semanal por producto y la codificación por
+caso atípico, se presenta en el anexo correspondiente: Anexo 8.4 -- Diagrama de Gantt.
+
+6.3 Plazos de revisión y subsanación
+
+Conforme al numeral 8 del TDR, los plazos institucionales aplicables al ciclo de revisión de cada
+producto son los siguientes:
+
+                                                                                         17
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+Etapa                                            Plazo
+Conformidad de la UOR (SINFA)                    Hasta 5 días calendario
+Notificación de observaciones por la UOR         Hasta 5 días calendario
+Levantamiento de observaciones por el consultor  Hasta 3 días calendario
+Rondas máximas de subsanación                    2 oportunidades
+
+Estos plazos no se contabilizan dentro de los 240 días calendario del servicio, conforme al
+último párrafo del numeral 8 del TDR.
+
+7. Conclusiones y recomendaciones
+
+7.1 Conclusiones
+
+    · El presente Plan de Trabajo establece el marco contractual, técnico y operativo para los
+         240 días calendario de la consultoría, y constituye la línea base sobre la cual la SINFA
+         podrá medir el avance, las conformidades parciales y el cierre final del servicio.
+
+    · Los nueve productos definidos cubren de manera completa los tres casos atípicos
+         prioritarios -- ausencia del ingeniero residente y/o supervisor, sancionados SERVIR que
+         laboran durante el periodo de sanción y beneficiarios de programas sociales que no
+         corresponden -- respetando los plazos del numeral 8 del TDR.
+
+    · La metodología propuesta se ajusta al Procedimiento "Desarrollo de Soluciones" de la
+         CGR, a los Estándares de Base de Datos vigentes y a los lineamientos técnicos de la
+         GTIGD, en línea con la norma NTP-ISO/IEC 12207.
+
+    · La arquitectura medallón (Bronce  Plata  Oro) sobre Delta Lake y el stack PySpark +
+         Spark SQL + Apache Airflow + SQL Server + SSAS + Power BI son consistentes con la
+         Plataforma de Minería de Datos descrita en el Anexo 03 del TDR.
+
+7.2 Recomendaciones
+
+A fin de garantizar la ejecución oportuna y completa de los productos contractuales, formulo las
+siguientes recomendaciones a la SINFA:
+
+    · Habilitación temprana de accesos. Disponer los accesos en modo consulta a las
+         bases de datos de la CGR durante los primeros días del servicio, a fin de iniciar sin
+         demora la identificación de fuentes del Producto N° 2.
+
+    · Estándares técnicos GTIGD. Compartir formalmente los estándares aplicables
+         (convenciones de nombramiento, rutas en HDFS, política de retries en Airflow, plantillas
+         de DAG, configuración del repositorio GitLab) que permitan alinear la implementación a
+         los lineamientos institucionales desde el primer entregable.
+
+    · Coordinación con fuentes externas. Coordinar oportunamente la disponibilidad de las
+         fuentes externas (RENIEC, SUNEDU, MEF, SERVIR, AIRHSP, JUNTOS, PENSIÓN 65,
+         SISFOH), considerando que su acceso puede requerir convenios o procesos
+         administrativos previos.
+
+    · Ventana de coordinación regular. Definir una ventana semanal o quincenal de
+         coordinación con la SINFA y la Subgerencia de Gestión de Inversiones para el
+         seguimiento de avances, el levantamiento de bloqueos y la validación temprana de
+         criterios de aceptación.
+
+                                                                          18
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+    · Líder usuario asignado. Designar un líder usuario y/o analista de sistemas como
+         contraparte funcional para validar reglas de negocio, mapeos de campos y resultados de
+         los scripts de identificación de casos atípicos.
+
+                                                                                                                                           19
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+8. Anexos                              Descripción
+8.1 Lista de abreviaturas y acrónimos  Aplicativo Informático para el Registro Centralizado
+                                       de Planillas y de Datos de los Recursos Humanos
+Sigla                                  del Sector Público
+AIRHSP                                 Banco Interamericano de Desarrollo
+                                       Proyecto "Mejoramiento de los servicios de control
+BID                                    gubernamental para un control efectivo, preventivo
+BID 3                                  y facilitador de la gestión pública"
+                                       Change Data Capture / Change Data Feed
+CDC / CDF                              Contraloría General de la República del Perú
+CGR                                    Código Único de Inversiones
+CUI                                    Directed Acyclic Graph (flujo de trabajo de
+DAG                                    procesos ETL en Apache Airflow)
+                                       Extract, Transform, Load (procesos de extracción,
+ETL                                    transformación y carga de datos)
+                                       Gerencia de Tecnologías de la Información y
+GTIGD                                  Gobierno Digital
+                                       Hadoop Distributed File System
+HDFS                                   Hive Metastore
+HMS                                    Sistema de Información de Obras Públicas
+INFOBRAS                               Programa Nacional de Apoyo Directo a los más
+JUNTOS                                 Pobres
+                                       Ministerio de Economía y Finanzas
+MEF                                    Plataforma de Análisis de Datos del MEF
+MEF_ANDAT                              Norma Técnica Peruana
+NTP                                    Programa Nacional de Asistencia Solidaria
+PENSIÓN 65                             Registro Nacional de Identificación y Estado Civil
+RENIEC                                 Registro Nacional de Proveedores
+RNP                                    Servicio de Consultoría Individual
+SCI                                    Autoridad Nacional del Servicio Civil
+SERVIR                                 Sistema Integrado de Administración Financiera
+SIAF                                   Sistema Integrado de Control Gubernamental
+SICG                                   Subgerencia de Sistemas de Información y
+SINFA                                  Analítica de Datos
+                                       Sistema de Focalización de Hogares
+SISFOH                                 Sistema Nacional de Control
+SNC                                    SQL Server Analysis Services
+SSAS                                   Sistema de Seguimiento de Inversiones
+SSI                                    Superintendencia Nacional de Educación Superior
+SUNEDU
+                                                                                                         20
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+Sigla                     Descripción
+TDR                       Universitaria
+UE002
+UOR                       Términos de Referencia
+YARN
+                          Unidad Ejecutora 002 -- Gestión de Proyectos y
+8.2 Glosario de términos  Fortalecimiento de Capacidades
+
+Término                   Unidad Orgánica Responsable
+Arquitectura medallón
+                          Yet Another Resource Negotiator (gestor de
+Capa Bronce               recursos de Apache Hadoop)
+
+Capa Plata                Definición
+Capa Oro
+                          Patrón de organización del lakehouse en tres
+Capa de Servicio          capas progresivas -- Bronce, Plata y Oro -- que
+                          separa el dato crudo, el dato refinado y el dato listo
+Caso atípico              para el negocio.
+
+Delta Lake                Capa del lakehouse donde se almacenan los datos
+                          crudos e históricos tal como llegan desde la fuente,
+Idempotencia              preservando la trazabilidad.
+
+Lakehouse                 Capa intermedia donde los datos son filtrados,
+                          limpiados, normalizados y refinados.
+Linaje de datos
+                          Capa de negocio donde los datos se modelan
+Matriz bus dimensional    dimensionalmente y se agregan para su consumo
+                          analítico.
+Modelo dimensional
+                          Capa de exposición de los datos procesados al
+                          consumo final por tableros y sistemas (en este
+                          proyecto, sobre SQL Server y SSAS).
+
+                          Hallazgo o conjunto de registros en los que se
+                          identifica una transgresión a una normativa vigente,
+                          conforme al numeral 3 del TDR.
+
+                          Capa de almacenamiento abierta que aporta
+                          transacciones ACID, control de versiones y manejo
+                          de esquemas sobre Apache Hadoop.
+
+                          Propiedad de un proceso ETL que permite re-
+                          ejecutarlo múltiples veces sobre los mismos datos
+                          sin generar duplicados ni alterar el resultado.
+
+                          Plataforma de datos que integra las capacidades
+                          analíticas de un data warehouse sobre el
+                          almacenamiento abierto de un data lake.
+
+                          Trazabilidad documentada del flujo de los datos
+                          desde su origen hasta su consumo final, indicando
+                          transformaciones aplicadas en cada capa.
+
+                          Matriz que relaciona los procesos de negocio con
+                          las dimensiones conformadas que los soportan,
+                          base del diseño dimensional de Kimball.
+
+                          Modelo de datos analítico estructurado en tablas de
+                          hechos y dimensiones, optimizado para consultas
+
+                                                                                            21
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+Término    Definición
+PySpark    de inteligencia de negocios.
+Spark SQL
+           Interfaz de Python para Apache Spark, utilizada
+           para el procesamiento distribuido de grandes
+           volúmenes de datos.
+
+           Módulo de Apache Spark para consultas
+           estructuradas mediante el lenguaje SQL sobre
+           datos distribuidos.
+
+8.3 Diagrama de la Plataforma de Minería de Datos
+
+Referencia: Anexo 03 del TDR -- Arquitectura de la Plataforma de Minería de Datos de la CGR.
+La descripción funcional de cada capa se desarrolla en la Sección 3.3 del presente Plan de
+Trabajo.
+
+                                                         22
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+8.4 Diagrama de Gantt del cronograma
+
+Archivo adjunto: Gantt-P1.xlsx -- Cronograma detallado por semana con codificación por caso
+         atípico y panel congelado para visualización extendida. Soporta el cuadro maestro
+         presentado en la Sección 6.1.
+
+            CRONOGRAMA -- PLAN DE TRABAJO (PRODUCTO N° 1)
+
+       Consultoría: SCI N° 013-2026-CG-UE002/BID3 | Contrato N° 062-2026-CG-UE002/BID | Suscripción:
+                                                                       28/04/2026
+
+Semana  Periodo        P1  P2  P3  P4  P5  P6  P7  P8  P9
+
+S1      29/04 ­ 05/05
+
+S2      06/05 ­ 12/05
+
+S3      13/05 ­ 19/05
+
+S4      20/05 ­ 26/05
+
+S5      27/05 ­ 02/06
+
+S6      03/06 ­ 09/06
+
+S7      10/06 ­ 16/06
+
+S8      17/06 ­ 23/06
+
+S9      24/06 ­ 30/06
+
+S10     01/07 ­ 07/07
+
+S11     08/07 ­ 14/07
+
+S12     15/07 ­ 21/07
+
+S13     22/07 ­ 28/07
+
+S14     29/07 ­ 04/08
+
+S15     05/08 ­ 11/08
+
+S16     12/08 ­ 18/08
+
+S17     19/08 ­ 25/08
+
+S18     26/08 ­ 01/09
+
+S19     02/09 ­ 08/09
+
+S20     09/09 ­ 15/09
+
+S21     16/09 ­ 22/09
+
+S22     23/09 ­ 29/09
+
+S23     30/09 ­ 06/10
+
+S24     07/10 ­ 13/10
+
+S25     14/10 ­ 20/10
+
+S26     21/10 ­ 27/10
+
+S27     28/10 ­ 03/11
+
+S28     04/11 ­ 10/11
+
+                                                           23
+CONTRALORÍA GENERAL DE LA REPÚBLICA -- PROYECTO BID 3
+ACCIÓN DE INVERSIÓN 1.8.2 -- IMPLEMENTACIÓN DEL SISTEMA
+INTEGRADO
+DE LOS SERVICIOS DE CONTROL GUBERNAMENTAL -- FASE 2
+
+S29  11/11 ­ 17/11
+
+S30  18/11 ­ 24/11
+
+S31  25/11 ­ 01/12
+
+S32  02/12 ­ 08/12
+
+S33  09/12 ­ 15/12
+
+S34  16/12 ­ 22/12
+
+S35  23/12 ­ 29/12
+
+Cód.                   LEYENDA DE PRODUCTOS                       Inicio  Fin             Días
+ P1 Plan de Trabajo  Producto
+
+                                                                  29/04/2026 05/05/2026 7
+
+P2 Caso 1 -- Ingesta inicial (SSI, INFOBRAS)                      06/05/2026 28/05/2026 23
+                                                                  29/05/2026 27/06/2026 30
+P3   Caso 1 -- Fuentes complementarias y linaje (MEF, SIAF,       28/06/2026 27/07/2026 30
+     MEF_ANDAT)
+
+P4 Caso 2 -- Ingesta inicial (SERVIR, SUNEDU, RNP, AIRHSP)
+
+P5 Caso 2 -- Linaje, modelo y certificación                       28/07/2026 26/08/2026 30
+
+P6 Caso 3 -- Ingesta inicial (SISFOH, JUNTOS, PENSIÓN 65)         27/08/2026 25/09/2026 30
+
+P7   Caso 3 -- Fuentes complementarias y linaje (MEF, PLANILLAS,  26/09/2026 25/10/2026   30
+     RENIEC)
+
+P8 Despliegue, matriz bus dimensional y validación P2/P5          26/10/2026 24/11/2026 30
+
+P9 Validación P6/P7, observaciones y transferencia                25/11/2026 24/12/2026 30
+
+                                         CÓDIGO DE COLOR POR CASO ATÍPICO
+               Plan de Trabajo
+               Caso 1: Ausencia residente/supervisor
+               Caso 2: Sancionados SERVIR
+               Caso 3: Programas sociales
+               Casos 1 y 2: Despliegue y validación
+               Caso 3: Validación y transferencia
+
+Nota: Las fechas que coincidan con día no laborable se trasladan al día hábil siguiente,
+conforme al numeral 8 del TDR.
+
+                                                                                                24
+
